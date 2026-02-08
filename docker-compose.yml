@@ -13,7 +13,7 @@ services:
 
   mcpserver:
     build:
-      context: ./src/McpServer/src/EcoMob.McpServer.Entry
+      context: ./src/McpServer/src/EcoMob.McpSseServer.WebApp
       dockerfile: Dockerfile
     container_name: eco_mcpserver
     restart: unless-stopped
