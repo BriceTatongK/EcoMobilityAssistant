@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: eco_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes"]
+
+  mcpserver:
+    build:
+      context: ./src/McpServer/src/EcoMob.McpServer.Entry
+      dockerfile: Dockerfile
+    container_name: eco_mcpserver
+    restart: unless-stopped
+    ports:
+      - "5000:80" # Map container port 80 to host 5000
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - REDIS_CONNECTION=redis:6379
+    depends_on:
+      - redis
+
+volumes:
+  redis_data:
