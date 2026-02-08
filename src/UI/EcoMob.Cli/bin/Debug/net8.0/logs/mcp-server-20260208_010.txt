@@ -1,0 +1,172 @@
+2026-02-08 16:33:00.464 +01:00 [INF] MCP Server starting ...
+2026-02-08 16:33:00.557 +01:00 [DBG] Hosting starting
+2026-02-08 16:33:00.613 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 16:33:00.622 +01:00 [INF] Hosting environment: Production
+2026-02-08 16:33:00.623 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0
+2026-02-08 16:33:00.624 +01:00 [DBG] Hosting started
+2026-02-08 16:33:00.630 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:00.631 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:00.637 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 16:33:00.662 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 2
+2026-02-08 16:33:00.667 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 16:33:00.668 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:00.676 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client ( ) with method initialize
+2026-02-08 16:33:00.699 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+2026-02-08 16:33:00.727 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 2, JSON {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 16:33:00.728 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 16:33:00.859 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 16:33:00.862 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): (no id)
+2026-02-08 16:33:00.862 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID (no id)
+2026-02-08 16:33:00.862 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:21.473 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 16:33:21.474 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 3
+2026-02-08 16:33:21.475 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 16:33:21.475 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:21.476 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 16:33:21.479 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 16:33:21.480 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 3, JSON {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 16:33:21.480 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 16:33:21.498 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 16:33:21.499 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 4
+2026-02-08 16:33:21.499 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 16:33:21.499 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:33:21.499 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 16:33:21.501 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 16:33:21.512 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 4, JSON {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 16:33:21.512 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 16:34:05.968 +01:00 [INF] Transport end of stream for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.968 +01:00 [INF] Transport exiting read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.970 +01:00 [INF] Transport cleaning up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.970 +01:00 [DBG] Transport waiting for read task for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.973 +01:00 [INF] Transport cleanup read task cancelled for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.973 +01:00 [INF] Transport read task cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 16:34:05.975 +01:00 [INF] Transport cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:00.634 +01:00 [INF] MCP Server starting ...
+2026-02-08 17:12:00.727 +01:00 [DBG] Hosting starting
+2026-02-08 17:12:00.783 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 17:12:00.793 +01:00 [INF] Hosting environment: Production
+2026-02-08 17:12:00.794 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0
+2026-02-08 17:12:00.794 +01:00 [DBG] Hosting started
+2026-02-08 17:12:00.800 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:00.801 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:00.807 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 17:12:00.834 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 2
+2026-02-08 17:12:00.837 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 17:12:00.838 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:00.846 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client ( ) with method initialize
+2026-02-08 17:12:00.868 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+2026-02-08 17:12:00.897 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 2, JSON {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 17:12:00.897 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 17:12:01.012 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 17:12:01.014 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): (no id)
+2026-02-08 17:12:01.014 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID (no id)
+2026-02-08 17:12:01.014 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:32.154 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 17:12:32.166 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 3
+2026-02-08 17:12:32.167 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 17:12:32.167 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:32.168 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 17:12:32.171 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 17:12:32.172 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 3, JSON {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 17:12:32.172 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 17:12:32.191 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 17:12:32.192 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 4
+2026-02-08 17:12:32.192 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 17:12:32.192 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 17:12:32.192 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:12:32.193 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 17:12:32.203 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 4, JSON {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 17:12:32.204 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 17:13:21.144 +01:00 [INF] Transport end of stream for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.146 +01:00 [INF] Transport exiting read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.148 +01:00 [INF] Transport cleaning up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.148 +01:00 [DBG] Transport waiting for read task for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.150 +01:00 [INF] Transport cleanup read task cancelled for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.151 +01:00 [INF] Transport read task cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:13:21.152 +01:00 [INF] Transport cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:12.674 +01:00 [INF] MCP Server starting ...
+2026-02-08 17:19:12.752 +01:00 [DBG] Hosting starting
+2026-02-08 17:19:12.803 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 17:19:12.812 +01:00 [INF] Hosting environment: Production
+2026-02-08 17:19:12.813 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0
+2026-02-08 17:19:12.813 +01:00 [DBG] Hosting started
+2026-02-08 17:19:12.820 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:12.821 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:12.827 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 17:19:12.853 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 2
+2026-02-08 17:19:12.857 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 17:19:12.857 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:12.864 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client ( ) with method initialize
+2026-02-08 17:19:12.886 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+2026-02-08 17:19:12.912 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 2, JSON {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 17:19:12.912 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 17:19:13.022 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 17:19:13.024 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): (no id)
+2026-02-08 17:19:13.024 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID (no id)
+2026-02-08 17:19:13.024 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:28.295 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 17:19:28.295 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 3
+2026-02-08 17:19:28.296 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 17:19:28.296 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:28.297 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 17:19:28.301 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 17:19:28.301 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 3, JSON {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 17:19:28.301 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 17:19:28.317 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 17:19:28.317 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 4
+2026-02-08 17:19:28.318 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 17:19:28.318 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:28.318 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 17:19:28.320 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 17:19:28.329 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 4, JSON {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 17:19:28.330 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 17:19:41.574 +01:00 [INF] Transport end of stream for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.575 +01:00 [INF] Transport exiting read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.579 +01:00 [INF] Transport cleaning up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.580 +01:00 [DBG] Transport waiting for read task for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.583 +01:00 [INF] Transport cleanup read task cancelled for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.583 +01:00 [INF] Transport read task cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 17:19:41.584 +01:00 [INF] Transport cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:13:51.622 +01:00 [INF] MCP Server starting ...
+2026-02-08 20:13:51.702 +01:00 [DBG] Hosting starting
+2026-02-08 20:13:51.754 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 20:13:51.765 +01:00 [INF] Hosting environment: Production
+2026-02-08 20:13:51.766 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0
+2026-02-08 20:13:51.767 +01:00 [DBG] Hosting started
+2026-02-08 20:13:51.773 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:13:51.773 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:13:51.779 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 20:13:51.805 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 2
+2026-02-08 20:13:51.809 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 20:13:51.809 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:13:51.815 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client ( ) with method initialize
+2026-02-08 20:13:51.837 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+2026-02-08 20:13:51.865 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 2, JSON {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 20:13:51.866 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 20:13:51.969 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 20:13:51.971 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): (no id)
+2026-02-08 20:13:51.971 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID (no id)
+2026-02-08 20:13:51.971 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:19:45.121 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 20:19:45.122 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 3
+2026-02-08 20:19:45.122 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 20:19:45.122 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:19:45.122 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 20:19:45.126 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method ping
+2026-02-08 20:19:45.127 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 3, JSON {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 20:19:45.127 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 3
+2026-02-08 20:19:45.144 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 20:19:45.144 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 4
+2026-02-08 20:19:45.144 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 20:19:45.144 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:19:45.144 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 20:19:45.147 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method tools/list
+2026-02-08 20:19:45.157 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 4, JSON {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 20:19:45.157 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 4
+2026-02-08 20:20:33.657 +01:00 [INF] Transport end of stream for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.658 +01:00 [INF] Transport exiting read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.662 +01:00 [INF] Transport cleaning up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.663 +01:00 [DBG] Transport waiting for read task for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.666 +01:00 [INF] Transport cleanup read task cancelled for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.666 +01:00 [INF] Transport read task cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 20:20:33.669 +01:00 [INF] Transport cleaned up for Server (stdio) (Mobility-MCP-Server)

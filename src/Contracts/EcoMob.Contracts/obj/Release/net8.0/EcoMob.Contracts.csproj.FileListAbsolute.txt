@@ -1,0 +1,11 @@
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\bin\Release\net8.0\EcoMob.Contracts.deps.json
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\bin\Release\net8.0\EcoMob.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\bin\Release\net8.0\EcoMob.Contracts.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.AssemblyInfoInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.AssemblyInfo.cs
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\refint\EcoMob.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\EcoMob.Contracts.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Release\net8.0\ref\EcoMob.Contracts.dll

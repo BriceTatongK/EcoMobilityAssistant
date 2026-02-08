@@ -1,0 +1,33 @@
+2026-02-08 13:32:24.169 +01:00 [INF] MCP Server starting ...
+2026-02-08 13:32:24.267 +01:00 [DBG] Hosting starting
+2026-02-08 13:32:24.339 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-08 13:32:24.352 +01:00 [INF] Hosting environment: Production
+2026-02-08 13:32:24.353 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0
+2026-02-08 13:32:24.353 +01:00 [DBG] Hosting started
+2026-02-08 13:32:24.362 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.363 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.371 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 13:32:24.405 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 2
+2026-02-08 13:32:24.413 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 2
+2026-02-08 13:32:24.414 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.414 +01:00 [INF] Transport end of stream for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.415 +01:00 [INF] Transport exiting read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.418 +01:00 [INF] Transport cleaning up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.418 +01:00 [DBG] Transport waiting for read task for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.419 +01:00 [INF] Transport cleanup read task cancelled for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.420 +01:00 [INF] Transport read task cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.422 +01:00 [INF] Transport cleaned up for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.422 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client ( ) with method initialize
+2026-02-08 13:32:24.456 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+2026-02-08 13:32:24.458 +01:00 [ERR] Transport not connected for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.463 +01:00 [ERR] Request handler error for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with method initialize
+McpDotNet.Protocol.Transport.McpTransportException: Transport is not connected
+   at McpDotNet.Protocol.Transport.StdioServerTransport.SendMessageAsync(IJsonRpcMessage message, CancellationToken cancellationToken)
+   at McpDotNet.Shared.McpJsonRpcEndpoint.HandleRequest(JsonRpcRequest request, CancellationToken cancellationToken)
+2026-02-08 13:32:24.503 +01:00 [ERR] Transport not connected for Server (stdio) (Mobility-MCP-Server)
+2026-02-08 13:32:24.519 +01:00 [ERR] Message handler error for Server (Mobility-MCP-Server 1.0.0), Client (EcoMobilityAssistantClient 1.0.0) with message type JsonRpcRequest, payload {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+McpDotNet.Protocol.Transport.McpTransportException: Transport is not connected
+   at McpDotNet.Protocol.Transport.StdioServerTransport.SendMessageAsync(IJsonRpcMessage message, CancellationToken cancellationToken)
+   at McpDotNet.Shared.McpJsonRpcEndpoint.HandleRequest(JsonRpcRequest request, CancellationToken cancellationToken)
+   at McpDotNet.Shared.McpJsonRpcEndpoint.HandleMessageAsync(IJsonRpcMessage message, CancellationToken cancellationToken)
+   at McpDotNet.Shared.McpJsonRpcEndpoint.<>c__DisplayClass17_1.<<ProcessMessagesAsync>g__ProcessMessageAsync|0>d.MoveNext()

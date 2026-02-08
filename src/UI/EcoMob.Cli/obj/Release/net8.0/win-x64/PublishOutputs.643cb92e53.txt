@@ -1,0 +1,7 @@
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\EcoMob.Cli.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\appsettings.json
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\sni.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\EcoMob.Core.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\EcoMob.Infra.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\EcoMob.Contracts.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\win-x64\publish\EcoMob.Cli.exe

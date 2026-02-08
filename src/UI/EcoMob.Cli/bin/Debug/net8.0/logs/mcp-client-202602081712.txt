@@ -1,0 +1,44 @@
+2026-02-08 17:12:00.900 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 17:12:00.945 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 2
+2026-02-08 17:12:00.951 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 2
+2026-02-08 17:12:00.953 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 17:12:00.977 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}
+2026-02-08 17:12:00.977 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize
+2026-02-08 17:12:01.008 +01:00 [INF] Server Client (EcoMobilityServer: EcoMobility-McpServer) capabilities received: {"tools":{}}, server info: {"name":"Mobility-MCP-Server","version":"1.0.0"}
+2026-02-08 17:12:01.010 +01:00 [DBG] Sending message to Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 17:12:01.010 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID (no id), JSON {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 17:12:01.012 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID (no id)
+2026-02-08 17:12:01.014 +01:00 [INF] Client for Client (EcoMobilityServer: EcoMobility-McpServer) created and connected
+2026-02-08 17:12:01.015 +01:00 [INF] IMcpClient created successfully.
+2026-02-08 17:12:01.015 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-08 17:12:27.832 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=16).
+2026-02-08 17:12:30.041 +01:00 [DBG] ValidateAsync: validation result: isValid=true.
+2026-02-08 17:12:32.147 +01:00 [INF] Classified intent: "LOCATECHARGINGSTATION" - Reasoning: L'utente ha chiesto informazioni sulle stazioni per e-bike, indicando un interesse per le stazioni di ricarica.
+2026-02-08 17:12:32.152 +01:00 [DBG] ProcessAsync: starting MCP handshake.
+2026-02-08 17:12:32.153 +01:00 [INF] Sending request payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 17:12:32.153 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping
+2026-02-08 17:12:32.153 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3, JSON {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 17:12:32.155 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3
+2026-02-08 17:12:32.155 +01:00 [DBG] Request sent for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping, ID 3. Waiting for response.
+2026-02-08 17:12:32.173 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 17:12:32.173 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 3
+2026-02-08 17:12:32.174 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3
+2026-02-08 17:12:32.174 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 17:12:32.176 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {}
+2026-02-08 17:12:32.177 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping
+2026-02-08 17:12:32.178 +01:00 [DBG] ProcessAsync: enumerating MCP tools.
+2026-02-08 17:12:32.190 +01:00 [INF] Sending request payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 17:12:32.190 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list
+2026-02-08 17:12:32.190 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4, JSON {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 17:12:32.192 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4
+2026-02-08 17:12:32.192 +01:00 [DBG] Request sent for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list, ID 4. Waiting for response.
+2026-02-08 17:12:32.205 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 17:12:32.205 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 4
+2026-02-08 17:12:32.205 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4
+2026-02-08 17:12:32.205 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 17:12:32.214 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}
+2026-02-08 17:12:32.214 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list
+2026-02-08 17:12:32.215 +01:00 [DBG] ProcessAsync: found 1 MCP tools.
+2026-02-08 17:12:32.236 +01:00 [DBG] ProcessAsync: invoking chat model with tools (count=1).
+2026-02-08 17:12:32.245 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-08 17:12:34.443 +01:00 [DBG] GetResponseAsync completed.

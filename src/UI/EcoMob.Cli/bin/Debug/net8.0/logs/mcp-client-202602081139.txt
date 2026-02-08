@@ -1,0 +1,81 @@
+2026-02-08 11:39:09.037 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-08 11:39:09.193 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-08 11:39:09.207 +01:00 [DBG] Configuring IClientTransport (TransportType=stdio).
+2026-02-08 11:39:09.208 +01:00 [INF] Using local stdio transport with server path C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\publish\EcoMob.McpServer.Entry.exe.
+2026-02-08 11:39:09.254 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-08 11:39:09.272 +01:00 [INF] Creating client for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:09.295 +01:00 [INF] Transport for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) connecting
+2026-02-08 11:39:09.329 +01:00 [INF] Creating process for transport for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with command cmd.exe, arguments /c C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\publish\EcoMob.McpServer.Entry.exe, environment HOMEDRIVE=C:, NUMBER_OF_PROCESSORS=16, ProgramFiles(x86)=C:\Program Files (x86), VSAPPIDDIR=C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\IDE\, PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, ALLUSERSPROFILE=C:\ProgramData, PUBLIC=C:\Users\Public, SignInWithHomeTenantOnly=False, USERDOMAIN_ROAMINGPROFILE=BRTAGK, FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer, EFC_10832_2775293581=1, VisualStudioVersion=18.0, OPENAI_API_KEY=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, CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files, Path=C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\apache-maven\apache-maven-3.9.11\bin;C:\apache-maven\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-25\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Users\JossT\AppData\Local\Microsoft\WindowsApps;C:\Users\JossT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\JossT\.dotnet\tools;C:\Users\JossT\AppData\Roaming\npm;C:\Users\JossT\Downloads\stripe_1.27.0_windows_x86_64;;C:\Program Files\Microsoft Visual Studio\18\Insiders\Common7\IDE\PrivateAssemblies\runtimes\win-x64\native, USERPROFILE=C:\Users\JossT, PROCESSOR_REVISION=6801, DOTNET_MODIFIABLE_ASSEMBLIES=debug, LOGONSERVER=\\BRTAGK, ProgramData=C:\ProgramData, JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-21.0.8.9-hotspot, VSLANG=1040, TMP=C:\Users\JossT\AppData\Local\Temp, EFC_10832_1262719628=1, ThreadedWaitDialogDpiContext=-4, VSSKUEDITION=Community, CommonProgramFiles=C:\Program Files\Common Files, OneDrive=C:\Users\JossT\OneDrive, VSAPPIDNAME=devenv.exe, PROCESSOR_ARCHITECTURE=AMD64, PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD, EFC_10832_3789132940=1, ServiceHubHostServiceBrokerPipeName=\\.\pipe\806F346E-F83E-4B3D-BED3-437655B4AA32, PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\, ComSpec=C:\WINDOWS\system32\cmd.exe, SystemDrive=C:, VisualStudioEdition=Microsoft Visual Studio Community 2026, VS_Perf_Session_GCHeapCount=2, EFC_10832_1592913036=1, HOMEPATH=\Users\JossT, ProgramFiles=C:\Program Files, CommonProgramW6432=C:\Program Files\Common Files, PkgDefApplicationConfigFile=C:\Users\JossT\AppData\Local\Microsoft\VisualStudio\18.0_78850e17\devenv.exe.config, WEBVIEW2_DEFAULT_BACKGROUND_COLOR=ffffff, VsPerMonitorDpiAwarenessEnabled.21992=TRUE, SESSIONNAME=Console, VisualStudioDir=C:\Users\JossT\Documents\Visual Studio 18, OS=Windows_NT, MAVEN_HOME=C:\apache-maven\apache-maven-3.9.11, SystemRoot=C:\WINDOWS, PROCESSOR_LEVEL=23, EFC_10832_2283032206=1, ServiceHubLogSessionKey=0851A09C, USERNAME=JossT, APPDATA=C:\Users\JossT\AppData\Roaming, TEMP=C:\Users\JossT\AppData\Local\Temp, FPS_BROWSER_USER_PROFILE_STRING=Default, DriverData=C:\Windows\System32\Drivers\DriverData, USERDOMAIN=BRTAGK, ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO=1, windir=C:\WINDOWS, COMPUTERNAME=BRTAGK, LOCALAPPDATA=C:\Users\JossT\AppData\Local, ProgramW6432=C:\Program Files, MSBuildLoadMicrosoftTargetsReadOnly=true, working directory C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\net8.0, shutdown timeout 00:00:05
+2026-02-08 11:39:09.400 +01:00 [INF] Transport process started for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with PID 15272
+2026-02-08 11:39:09.409 +01:00 [INF] Transport reading messages for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:09.412 +01:00 [INF] Transport entering read messages loop for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:09.418 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:09.575 +01:00 [INF] Sending request payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 11:39:09.576 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize
+2026-02-08 11:39:09.584 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 2, JSON {"jsonrpc":"2.0","id":2,"method":"initialize","params":{"protocolVersion":"2024-11-05","capabilities":{},"clientInfo":{"name":"EcoMobilityAssistantClient","version":"1.0.0"}}}
+2026-02-08 11:39:09.590 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 2
+2026-02-08 11:39:09.592 +01:00 [DBG] Request sent for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize, ID 2. Waiting for response.
+2026-02-08 11:39:10.556 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":2,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}}
+2026-02-08 11:39:10.591 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 2
+2026-02-08 11:39:10.594 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 2
+2026-02-08 11:39:10.595 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:10.631 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"protocolVersion":"2024-11-05","capabilities":{"tools":{}},"serverInfo":{"name":"Mobility-MCP-Server","version":"1.0.0"},"instructions":""}
+2026-02-08 11:39:10.631 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize
+2026-02-08 11:39:10.660 +01:00 [INF] Server Client (EcoMobilityServer: EcoMobility-McpServer) capabilities received: {"tools":{}}, server info: {"name":"Mobility-MCP-Server","version":"1.0.0"}
+2026-02-08 11:39:10.662 +01:00 [DBG] Sending message to Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 11:39:10.663 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID (no id), JSON {"jsonrpc":"2.0","method":"notifications/initialized"}
+2026-02-08 11:39:10.664 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID (no id)
+2026-02-08 11:39:10.666 +01:00 [INF] Client for Client (EcoMobilityServer: EcoMobility-McpServer) created and connected
+2026-02-08 11:39:10.666 +01:00 [INF] IMcpClient created successfully.
+2026-02-08 11:39:10.666 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-08 11:39:38.501 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=30).
+2026-02-08 11:39:39.886 +01:00 [DBG] ValidateAsync: validation result: isValid=true.
+2026-02-08 11:39:41.324 +01:00 [INF] Classified intent: "LOCATECHARGINGSTATION" - Reasoning: L'utente ha richiesto informazioni sulle stazioni di car sharing a Pisa.
+2026-02-08 11:39:41.328 +01:00 [DBG] ProcessAsync: starting MCP handshake.
+2026-02-08 11:39:41.329 +01:00 [INF] Sending request payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 11:39:41.329 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping
+2026-02-08 11:39:41.329 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3, JSON {"jsonrpc":"2.0","id":3,"method":"ping"}
+2026-02-08 11:39:41.331 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3
+2026-02-08 11:39:41.331 +01:00 [DBG] Request sent for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping, ID 3. Waiting for response.
+2026-02-08 11:39:41.337 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":3,"result":{}}
+2026-02-08 11:39:41.337 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 3
+2026-02-08 11:39:41.337 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 3
+2026-02-08 11:39:41.337 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:41.342 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {}
+2026-02-08 11:39:41.342 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method ping
+2026-02-08 11:39:41.342 +01:00 [DBG] ProcessAsync: enumerating MCP tools.
+2026-02-08 11:39:41.357 +01:00 [INF] Sending request payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 11:39:41.357 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list
+2026-02-08 11:39:41.358 +01:00 [INF] Transport sending message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4, JSON {"jsonrpc":"2.0","id":4,"method":"tools/list"}
+2026-02-08 11:39:41.360 +01:00 [INF] Transport message sent for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4
+2026-02-08 11:39:41.360 +01:00 [DBG] Request sent for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list, ID 4. Waiting for response.
+2026-02-08 11:39:41.373 +01:00 [INF] Transport received message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): {"jsonrpc":"2.0","id":4,"result":{"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}}
+2026-02-08 11:39:41.373 +01:00 [INF] Transport received message parsed for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer): 4
+2026-02-08 11:39:41.373 +01:00 [INF] Transport message written for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) with ID 4
+2026-02-08 11:39:41.373 +01:00 [INF] Transport waiting for message for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:41.381 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"tools":[{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}}]}
+2026-02-08 11:39:41.382 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method tools/list
+2026-02-08 11:39:41.382 +01:00 [DBG] ProcessAsync: found 1 MCP tools.
+2026-02-08 11:39:41.399 +01:00 [DBG] ProcessAsync: invoking chat model with tools (count=1).
+2026-02-08 11:39:41.407 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-08 11:39:43.505 +01:00 [DBG] GetResponseAsync completed.
+2026-02-08 11:39:43.506 +01:00 [INF] ProcessAsync: model responded (length=219).
+2026-02-08 11:39:51.822 +01:00 [DBG] ReasoningAgent disposed its chat client.
+2026-02-08 11:39:51.824 +01:00 [INF] Cleaning up endpoint Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:51.832 +01:00 [INF] Endpoint message processing cancelled for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:51.849 +01:00 [INF] Transport cleaning up for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:51.849 +01:00 [DBG] Transport closing stdin for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:51.850 +01:00 [DBG] Transport waiting for shutdown for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.262 +01:00 [INF] Transport end of stream for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.262 +01:00 [ERR] Transport for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer) error: (no data)
+2026-02-08 11:39:52.262 +01:00 [INF] Transport exiting read messages loop for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.262 +01:00 [INF] Transport cleaning up for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.263 +01:00 [DBG] Transport waiting for read task for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.264 +01:00 [INF] Transport cleanup read task cancelled for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.265 +01:00 [INF] Transport read task cleaned up for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.265 +01:00 [INF] Transport cleaned up for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.266 +01:00 [INF] Endpoint cleaned up for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.266 +01:00 [INF] Transport cleaned up for Client (stdio) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-08 11:39:52.267 +01:00 [INF] Transport cleaning up for Client (stdio) for (dce8f964-ba81-48b7-871e-3f9e97f31dcc: EcoMob-McpServer)
+2026-02-08 11:39:52.267 +01:00 [INF] Transport cleaned up for Client (stdio) for (dce8f964-ba81-48b7-871e-3f9e97f31dcc: EcoMob-McpServer)
+2026-02-08 11:39:52.267 +01:00 [DBG] IntentClassifierAgent disposed its chat client.

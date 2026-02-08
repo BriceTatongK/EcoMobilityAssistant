@@ -1,0 +1,15 @@
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\bin\Release\net8.0\EcoMob.Core.deps.json
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\bin\Release\net8.0\EcoMob.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\bin\Release\net8.0\EcoMob.Core.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\bin\Release\net8.0\EcoMob.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\bin\Release\net8.0\EcoMob.Contracts.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.csproj.AssemblyReference.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.AssemblyInfoInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.AssemblyInfo.cs
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.C.418729BC.Up2Date
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\refint\EcoMob.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\EcoMob.Core.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Release\net8.0\ref\EcoMob.Core.dll
