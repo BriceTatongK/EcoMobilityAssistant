@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Av8JZvxjtks=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\McpServer\\src\\EcoMob.McpServer.Core\\EcoMob.McpServer.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JossT\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.1\\microsoft.extensions.dependencyinjection.abstractions.10.0.1.nupkg.sha512",
+    "C:\\Users\\JossT\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.1\\microsoft.extensions.logging.abstractions.10.0.1.nupkg.sha512",
+    "C:\\Users\\JossT\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.1\\system.diagnostics.diagnosticsource.10.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

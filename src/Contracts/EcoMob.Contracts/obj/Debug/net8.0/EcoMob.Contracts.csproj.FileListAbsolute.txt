@@ -5,6 +5,7 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.AssemblyInfoInputs.cache
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.AssemblyInfo.cs
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.sourcelink.json
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\refint\EcoMob.Contracts.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Contracts\EcoMob.Contracts\obj\Debug\net8.0\EcoMob.Contracts.pdb

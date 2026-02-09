@@ -1,0 +1,2 @@
+2026-02-09 13:31:55.379 +01:00 [INF] Creating client for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:31:55.960 +01:00 [INF] Transport reading messages for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer)

@@ -1,0 +1,15 @@
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\bin\Release\net8.0\EcoMob.McpServer.Core.deps.json
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\bin\Release\net8.0\EcoMob.McpServer.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\bin\Release\net8.0\EcoMob.McpServer.Core.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\bin\Release\net8.0\EcoMob.McpServer.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\bin\Release\net8.0\EcoMob.McpServer.Contracts.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.csproj.AssemblyReference.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.AssemblyInfoInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.AssemblyInfo.cs
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.M.FA10B84F.Up2Date
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\refint\EcoMob.McpServer.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.pdb
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\ref\EcoMob.McpServer.Core.dll

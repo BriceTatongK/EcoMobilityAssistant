@@ -1,0 +1,4 @@
+2026-02-09 13:47:00.531 +01:00 [INF] Cleaning up endpoint Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:47:00.556 +01:00 [INF] Endpoint message processing cancelled for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:47:00.587 +01:00 [INF] Transport read messages cancelled for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:47:00.603 +01:00 [INF] Endpoint cleaned up for Client (EcoMobilityServer: EcoMobility-McpServer)

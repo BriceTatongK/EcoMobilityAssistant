@@ -1,0 +1,16 @@
+2026-01-27 00:40:27.420 +01:00 [INF] MCP Server starting ...
+2026-01-27 00:40:27.558 +01:00 [DBG] Hosting starting
+2026-01-27 00:40:27.713 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-27 00:40:27.728 +01:00 [INF] Hosting environment: Production
+2026-01-27 00:40:27.730 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Debug\net8.0
+2026-01-27 00:40:27.730 +01:00 [DBG] Hosting started
+2026-01-27 00:40:27.743 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-01-27 00:40:27.744 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-01-27 00:45:07.644 +01:00 [INF] MCP Server starting ...
+2026-01-27 00:45:07.762 +01:00 [DBG] Hosting starting
+2026-01-27 00:45:07.920 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-27 00:45:07.934 +01:00 [INF] Hosting environment: Production
+2026-01-27 00:45:07.935 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Debug\net8.0
+2026-01-27 00:45:07.936 +01:00 [DBG] Hosting started
+2026-01-27 00:45:07.946 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
+2026-01-27 00:45:07.946 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)

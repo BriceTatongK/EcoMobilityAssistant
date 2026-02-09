@@ -8,6 +8,7 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.Core.AssemblyInfoInputs.cache
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.Core.AssemblyInfo.cs
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.Core.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.Core.sourcelink.json
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.C.418729BC.Up2Date
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\EcoMob.Core.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Core\EcoMob.Core\obj\Debug\net8.0\refint\EcoMob.Core.dll

@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 namespace EcoMob.Contracts.Enums
 {
     /// <summary>
-    /// LLM enum serializer, helper
+    /// Custom JSON converter for IntentType enum to handle unknown values gracefully.
     /// </summary>
     public class SafeIntentTypeConverter : JsonConverter<IntentType>
     {
@@ -25,7 +25,7 @@ namespace EcoMob.Contracts.Enums
     }
 
     /// <summary>
-    /// 
+    /// Extension methods for the IntentType enum.
     /// </summary>
     public static class IntentTypeExtensions
     {
@@ -65,6 +65,7 @@ namespace EcoMob.Contracts.Enums
         // [Comparison] - Benchmarking options
         [Display(Name = "COMPARISONS"), Description("user compares transport, stations, or options")]
         COMPARISONS,
+
         // [Itinerary] - Planning routes/trips
         [Display(Name = "MOBILITYINFO"), Description("user asks for current or historical eco mobility data")]
         MOBILITYINFO,

@@ -1,7 +1,7 @@
-﻿using EcoMob.Core.Services;
+﻿using EcoMob.Cli.Helpers;
+using EcoMob.Core.Services;
 using EcoMob.Contracts.Services;
 using Microsoft.Extensions.Logging;
-using EcoMob.Cli.Helpers;
 
 namespace EcoMob.Cli
 {

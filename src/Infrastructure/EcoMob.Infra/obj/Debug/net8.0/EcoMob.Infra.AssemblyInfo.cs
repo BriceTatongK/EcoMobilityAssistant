@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoMob.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fe0971985fc1fa91ae02e20ce42bf614babdc05")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoMob.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoMob.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

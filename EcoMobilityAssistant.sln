@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMob.McpServer.Contracts"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMob.McpSseServer.WebApp", "src\McpServer\src\EcoMob.McpSseServer.WebApp\EcoMob.McpSseServer.WebApp.csproj", "{BB93742E-B7B7-440E-B360-D92FB466A20C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{C1A037AA-91CA-4003-BF06-566040951863}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,0 +1,10 @@
+2026-02-09 13:35:55.998 +01:00 [INF] Creating client for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:35:56.317 +01:00 [INF] Transport reading messages for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 13:35:56.848 +01:00 [INF] Sending request for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize
+2026-02-09 13:35:57.490 +01:00 [INF] Transport received message parsed for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer): 2
+2026-02-09 13:35:57.494 +01:00 [INF] Transport message written for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer) with ID 2
+2026-02-09 13:35:57.537 +01:00 [INF] Request response received payload for Client (EcoMobilityServer: EcoMobility-McpServer): {"protocolVersion":"2024-11-05","capabilities":{"logging":{},"tools":{"listChanged":true}},"serverInfo":{"name":"EcoMob.McpSseServer.WebApp","version":"1.0.0.0"}}
+2026-02-09 13:35:57.538 +01:00 [INF] Request response received for Client (EcoMobilityServer: EcoMobility-McpServer) with method initialize
+2026-02-09 13:35:57.598 +01:00 [INF] Server Client (EcoMobilityServer: EcoMobility-McpServer) capabilities received: {"logging":{},"tools":{"listChanged":true}}, server info: {"name":"EcoMob.McpSseServer.WebApp","version":"1.0.0.0"}
+2026-02-09 13:35:57.611 +01:00 [INF] Client for Client (EcoMobilityServer: EcoMobility-McpServer) created and connected
+2026-02-09 13:35:57.614 +01:00 [INF] IMcpClient created successfully.
