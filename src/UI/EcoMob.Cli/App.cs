@@ -1,6 +1,7 @@
 ﻿using EcoMob.Core.Services;
 using EcoMob.Contracts.Services;
 using Microsoft.Extensions.Logging;
+using EcoMob.Cli.Helpers;
 
 namespace EcoMob.Cli
 {
@@ -15,7 +16,7 @@ namespace EcoMob.Cli
 
         public async Task RunAsync()
         {
-            PrintWelcome();
+            PrintHelpers.PrintWelcome();
 
             while (true)
             {
@@ -25,7 +26,7 @@ namespace EcoMob.Cli
                 if (string.IsNullOrWhiteSpace(input))
                     continue;
 
-                if (IsExitCommand(input))
+                if (PrintHelpers.IsExitCommand(input))
                     break;
 
                 try
@@ -35,7 +36,7 @@ namespace EcoMob.Cli
 
                     if (!validation.IsValid)
                     {
-                        PrintEcoMobMessage(
+                        PrintHelpers.PrintEcoMobMessage(
                             $"I can help with eco-mobility topics only 🌱\n→ {validation.Reason}"
                         );
                         continue;
@@ -43,44 +44,19 @@ namespace EcoMob.Cli
 
                     // Step 2: Process request
                     var response = await _ecoMobilityService.HandleUserRequestAsync(input);
-                    PrintEcoMobMessage(response);
+                    PrintHelpers.PrintEcoMobMessage(response);
                 }
                 catch (Exception ex)
                 {
                     _logger.LogError(ex, "Unhandled error while processing user input");
 
-                    PrintEcoMobMessage(
+                    PrintHelpers.PrintEcoMobMessage(
                         "Something went wrong while processing your request. Please try again."
                     );
                 }
             }
 
-            PrintGoodbye();
-        }
-
-        private static bool IsExitCommand(string input) =>
-            input.Equals("exit", StringComparison.OrdinalIgnoreCase) ||
-            input.Equals("quit", StringComparison.OrdinalIgnoreCase);
-
-        private static void PrintWelcome()
-        {
-            Console.WriteLine("""
-            🌱 EcoMobility Assistant
-            ----------------------------------
-            Ask me about parking, routes, EV charging,
-            public transport, and sustainable mobility.
-            Type 'exit' to quit.
-            """);
-        }
-
-        private static void PrintEcoMobMessage(string message)
-        {
-            Console.WriteLine($"\n🤖 EcoMob > {message}");
-        }
-
-        private static void PrintGoodbye()
-        {
-            Console.WriteLine("\n👋 EcoMob > Goodbye! Move green 🌿");
+            PrintHelpers.PrintGoodbye();
         }
     }
 }

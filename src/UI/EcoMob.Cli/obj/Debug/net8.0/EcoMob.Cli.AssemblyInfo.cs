@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoMob.Cli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a36665ab83df51e5cac52c7cee9dc202ca7780be")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoMob.Cli")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoMob.Cli")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

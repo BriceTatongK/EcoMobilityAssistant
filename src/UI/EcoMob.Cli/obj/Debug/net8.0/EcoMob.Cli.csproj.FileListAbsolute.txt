@@ -123,6 +123,7 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.AssemblyInfoInputs.cache
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.AssemblyInfo.cs
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.csproj.CoreCompileInputs.cache
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.sourcelink.json
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.csproj.Up2Date
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\EcoMob.Cli.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Debug\net8.0\refint\EcoMob.Cli.dll
