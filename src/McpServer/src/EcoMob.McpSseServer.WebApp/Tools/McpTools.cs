@@ -19,7 +19,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
         /// <param name="station"></param>
         /// <param name="language"></param>
         /// <returns></returns>
-        [McpServerTool(Name = "get_stations", Title = "Gets stations informations based on station type and language.")]
+        [McpServerTool(Name = "get_stations"), Description("Gets stations informations based on station type and language.")]
         public static async Task<CallToolResponse> GetStationsAsync(
             [Description("The station type to get stations for.")] StationType station,
             [Description("The language for the station data.")] DataLanguage language)
@@ -34,7 +34,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
         /// <param name="station"></param>
         /// <param name="dataType"></param>
         /// <returns></returns>
-        [McpServerTool(Name = "get_latest_measurements", Title = "Gets latest measurements for a specific station type and data type.")]
+        [McpServerTool(Name = "get_latest_measurements"), Description("Gets latest measurements for a specific station type and data type.")]
         public static async Task<CallToolResponse> GetLatestMeasurementsAsync(
             [Description("The station type to get latest measurements for.")] StationType station,
             [Description("The data type for the latest measurements.")] DataType dataType)
@@ -52,7 +52,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
         /// <param name="to"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        [McpServerTool(Name = "get_historical_data", Title = "Gets historical data for a specific station type, data type and time range.")]
+        [McpServerTool(Name = "get_historical_data"), Description("Gets historical data for a specific station type, data type and time range.")]
         public static async Task<CallToolResponse> GetHistoricalDataAsync(
             [Description("The station type to get historical data for.")] StationType stationType,
             [Description("The data type for the historical data.")] DataType dataType,
@@ -68,7 +68,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
         /// </summary>
         /// <param name="stations">The list of stations to check for availability.</param>
         /// <returns>A response containing the available stations.</returns>
-        [McpServerTool(Name = "get_available_stations", Title = "Checks available stations.")]
+        [McpServerTool(Name = "get_available_stations"), Description("Checks available stations.")]
         public static CallToolResponse GetAvailableStations(List<BaseMobilityStation> stations)
         {
             // validates input
@@ -99,7 +99,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
         /// </summary>
         /// <param name="stations"></param>
         /// <returns></returns>
-        [McpServerTool(Name = "get_active_stations", Title = "Gets active stations.")]
+        [McpServerTool(Name = "get_active_stations"), Description("Gets active stations.")]
         public static CallToolResponse GetActiveStations(List<BaseMobilityStation> stations)
         {
             // validates input
@@ -120,6 +120,7 @@ namespace EcoMob.McpSseServer.WebApp.McpTools
                 .Where(s => s.IsActive != null && s.IsActive == true)
                 .ToList()
                 .AsReadOnly();
+
             return McpResponse.Ok(activeStations);
         }
     }

@@ -1,0 +1,20 @@
+2026-02-13 21:12:12.135 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 21:12:12.323 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 21:12:12.336 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-13 21:12:12.388 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-13 21:12:12.398 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: 'C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\publish\EcoMob.McpServer.Entry.exe'.
+2026-02-13 21:12:12.757 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 25720.
+2026-02-13 21:12:12.776 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-13 21:12:14.312 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '1'.
+2026-02-13 21:12:14.375 +01:00 [INF] IMcpClient created successfully.
+2026-02-13 21:12:14.375 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 21:12:24.919 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=23).
+2026-02-13 21:12:27.545 +01:00 [DBG] ValidateAsync: validation result: isValid=true.
+2026-02-13 21:12:30.148 +01:00 [INF] Classified intent: "LOCATECHARGINGSTATION" - Reasoning: The user is looking for electric bike stations in Pisa.
+2026-02-13 21:12:30.154 +01:00 [DBG] ProcessAsync: starting MCP handshake.
+2026-02-13 21:12:30.166 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '2'.
+2026-02-13 21:12:30.168 +01:00 [DBG] ProcessAsync: enumerating MCP tools.
+2026-02-13 21:12:30.218 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '3'.
+2026-02-13 21:12:30.225 +01:00 [DBG] ProcessAsync: found 3 MCP tools.
+2026-02-13 21:12:30.230 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-13 21:12:32.098 +01:00 [DBG] GetResponseAsync completed.

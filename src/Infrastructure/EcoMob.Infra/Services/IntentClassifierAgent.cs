@@ -1,15 +1,16 @@
-﻿using EcoMob.Infra.Logging;
+﻿using EcoMob.Infra.Models;
+using EcoMob.Infra.Logging;
 using EcoMob.Contracts.Enums;
 using EcoMob.Contracts.Models;
 using Microsoft.Extensions.AI;
 using EcoMob.Contracts.Services;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
-using EcoMob.Infra.Models;
 
 namespace EcoMob.Infra.Services
 {
     public class IntentClassifierAgent : IIntentAgent, IDisposable
+
     {
         private readonly ILogger<IntentClassifierAgent> _logger;
         private readonly IChatClient _chatClient;
@@ -42,13 +43,17 @@ namespace EcoMob.Infra.Services
                 Your output will be consumed by downstream agents and MUST be machine-parseable.
 
                 LANGUAGE DETECTION:
-                - Detect the language of the user's input.
                 - You MUST write classificationReasoning and guardrails in the SAME language as the user.
+                - Detect the user's language from the user's input message only.
+                - Respond in the user's language for user-facing explanations.
+                - Always output structured JSON fields (type, extractedEntities, guardrails) in English.
+                - Do not use Italian unless the user's input message is in Italian.
+                
 
                 INTENT CLASSIFICATION (CRITICAL):
                 You MUST classify the intent into ONE AND ONLY ONE of the following values:
 
-                {string.Join("\n", Enum.GetValues<IntentType>().Select(t => t.ToFormattedString()))}
+                "{{string.Join("\n", Enum.GetValues<IntentType>().Select(t => t.ToFormattedString()))}}"
 
                 Constraints:
                 - Case-sensitive
@@ -85,16 +90,89 @@ namespace EcoMob.Infra.Services
 
                 FORMAT EXAMPLE (STRUCTURE ONLY):
                 {
-                  "type": "FindParking",
-                  "classificationReasoning": "L'utente sta cercando un parcheggio in una zona specifica.",
+                  "type": "Unknown",
+                  "classificationReasoning": "The user's request does not clearly relate to eco mobility or lacks sufficient context.",
+                  "extractedEntities": {},
+                  "guardrails": [
+                    "Do not make assumptions about user intent",
+                    "Ask for clarification before proceeding"
+                  ]
+                },
+                {
+                  "type": "EcoTips",
+                  "classificationReasoning": "The user is looking for advice on how to reduce their environmental impact while traveling.",
+                  "extractedEntities": {
+                    "context": "daily commuting",
+                    "userProfile": "urban resident"
+                  },
+                  "guardrails": [
+                    "Provide actionable and realistic suggestions",
+                    "Avoid generic or non-applicable sustainability advice"
+                  ]
+                },
+                 {
+                  "type": "PlanRoute",
+                  "classificationReasoning": "The user wants to plan an eco-friendly route between two locations.",
+                  "extractedEntities": {
+                    "origin": "Bolzano",
+                    "destination": "University of Trento",
+                    "preferredModes": ["train", "bike"]
+                  },
+                  "guardrails": [
+                    "Prioritize low-emission transport modes",
+                    "Avoid routes with unnecessary detours or transfers"
+                  ]
+                },
+                 {
+                  "type": "MobilityInfo",
+                  "classificationReasoning": "The user is asking for information about eco mobility usage trends.",
+                  "extractedEntities": {
+                    "location": "South Tyrol",
+                    "timePeriod": "last year",
+                    "dataType": "public transport usage"
+                  },
+                  "guardrails": [
+                    "Use verified and authoritative data sources",
+                    "Clearly distinguish between historical data and estimates"
+                  ]
+                },
+                 {
+                  "type": "Comparisons",
+                  "classificationReasoning": "The user wants to compare different eco-friendly transportation options.",
+                  "extractedEntities": {
+                    "origin": "Bolzano",
+                    "destination": "Trento",
+                    "comparisonCriteria": ["cost", "CO2 emissions", "travel time"]
+                  },
+                  "guardrails": [
+                    "Use up-to-date comparison data",
+                    "Highlight the most sustainable option clearly"
+                  ]
+                },
+                  {
+                  "type": "LocateChargingStation",
+                  "classificationReasoning": "The user is looking for electric vehicle charging stations nearby.",
                   "extractedEntities": {
                     "location": "Bolzano",
+                    "radius": "1km",
+                    "connectorType": "Type 2"
+                  },
+                  "guardrails": [
+                    "Only include operational charging stations",
+                    "Prefer renewable-energy-powered stations when available"
+                  ]
+                },
+                {
+                  "type": "FindParking",
+                  "classificationReasoning": "The user wants to find available parking near their destination.",
+                  "extractedEntities": {
+                    "location": "Bolzano city center",
                     "radius": "500m",
                     "vehicleType": "car"
                   },
                   "guardrails": [
-                    "Non suggerire parcheggi non disponibili",
-                    "Preferire opzioni con minore impatto ambientale"
+                    "Do not suggest private or restricted parking",
+                    "Prefer parking options with low environmental impact"
                   ]
                 }
 
@@ -144,12 +222,14 @@ namespace EcoMob.Infra.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Intent classification failed.");
-                return IntentContext.Unknown("Classification failure");
+                return IntentContext.Unknown($"Classification failure: {ex.Message}");
             }
         }
 
 
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void Dispose()
         {
             if (_chatClient is IDisposable disposable)

@@ -1,0 +1,6 @@
+2026-02-09 22:57:23.331 +01:00 [DBG] ReasoningAgent disposed its chat client.
+2026-02-09 22:57:23.353 +01:00 [INF] Cleaning up endpoint Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 22:57:23.367 +01:00 [INF] Endpoint message processing cancelled for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 22:57:23.382 +01:00 [INF] Transport read messages cancelled for Client (SSE) for (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 22:57:23.384 +01:00 [INF] Endpoint cleaned up for Client (EcoMobilityServer: EcoMobility-McpServer)
+2026-02-09 22:57:23.386 +01:00 [DBG] IntentClassifierAgent disposed its chat client.

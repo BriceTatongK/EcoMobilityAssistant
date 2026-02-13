@@ -1,0 +1,17 @@
+2026-02-12 10:28:19.222 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=27).
+2026-02-12 10:28:24.084 +01:00 [ERR] Error during context validation.
+System.ClientModel.ClientResultException: HTTP 429 (insufficient_quota: insufficient_quota)
+
+You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+   at OpenAI.ClientPipelineExtensions.ProcessMessageAsync(ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(BinaryContent content, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(IEnumerable`1 messages, ChatCompletionOptions options, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.OpenAIChatClient.GetResponseAsync(IEnumerable`1 messages, ChatOptions options, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync[T](IChatClient chatClient, IEnumerable`1 messages, JsonSerializerOptions serializerOptions, ChatOptions options, Nullable`1 useJsonSchemaResponseFormat, CancellationToken cancellationToken)
+   at EcoMob.Infra.Services.ContextValidatorAgent.ValidateAsync(String prompt, CancellationToken ct) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Services\ContextValidatorAgent.cs:line 80
+2026-02-12 10:28:24.369 +01:00 [ERR] Unhandled error while processing user input
+System.Exception: Error during context validation: HTTP 429 (insufficient_quota: insufficient_quota)
+
+You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+   at EcoMob.Infra.Services.ContextValidatorAgent.ValidateAsync(String prompt, CancellationToken ct) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Services\ContextValidatorAgent.cs:line 94
+   at EcoMob.Cli.App.RunAsync() in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\App.cs:line 35

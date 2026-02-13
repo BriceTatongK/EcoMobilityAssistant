@@ -1,0 +1,7 @@
+2026-02-12 10:29:35.885 +01:00 [DBG] ReasoningAgent disposed its chat client.
+2026-02-12 10:29:36.259 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport completed reading messages.
+2026-02-12 10:29:36.303 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shutting down.
+2026-02-12 10:29:36.305 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shut down.
+2026-02-12 10:29:36.307 +01:00 [DBG] IntentClassifierAgent disposed its chat client.
+2026-02-12 10:29:59.643 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-12 10:29:59.804 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).

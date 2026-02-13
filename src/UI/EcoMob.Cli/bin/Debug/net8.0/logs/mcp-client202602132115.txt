@@ -1,0 +1,15 @@
+2026-02-13 21:15:13.532 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=42).
+2026-02-13 21:15:14.328 +01:00 [DBG] ValidateAsync: validation result: isValid=true.
+2026-02-13 21:15:15.728 +01:00 [INF] Classified intent: "PLANROUTE" - Reasoning: The user is looking to plan a route from Unibz campus to Bolzano station.
+2026-02-13 21:15:15.729 +01:00 [DBG] ProcessAsync: starting MCP handshake.
+2026-02-13 21:15:15.740 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '8'.
+2026-02-13 21:15:15.744 +01:00 [DBG] ProcessAsync: enumerating MCP tools.
+2026-02-13 21:15:15.757 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '9'.
+2026-02-13 21:15:15.759 +01:00 [DBG] ProcessAsync: found 3 MCP tools.
+2026-02-13 21:15:15.759 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-13 21:15:17.681 +01:00 [DBG] GetResponseAsync completed.
+2026-02-13 21:15:17.682 +01:00 [DBG] Calling MCP tool get_stations with arguments: {"station":"ebike","language":"en"}
+2026-02-13 21:15:17.685 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '10'.
+2026-02-13 21:15:17.687 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-13 21:15:20.613 +01:00 [DBG] GetResponseAsync completed.
+2026-02-13 21:15:20.613 +01:00 [INF] ProcessAsync: model responded (length=268).

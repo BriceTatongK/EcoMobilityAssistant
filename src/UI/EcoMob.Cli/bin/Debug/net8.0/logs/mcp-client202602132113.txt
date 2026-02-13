@@ -1,0 +1,5 @@
+2026-02-13 21:13:11.374 +01:00 [DBG] Calling MCP tool get_stations with arguments: {"station":"ebike","language":"en"}
+2026-02-13 21:13:11.463 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '4'.
+2026-02-13 21:13:11.470 +01:00 [DBG] GetResponseAsync invoked.
+2026-02-13 21:13:12.825 +01:00 [DBG] GetResponseAsync completed.
+2026-02-13 21:13:12.825 +01:00 [INF] ProcessAsync: model responded (length=202).

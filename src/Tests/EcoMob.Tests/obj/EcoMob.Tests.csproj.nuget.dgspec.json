@@ -207,31 +207,35 @@
           "dependencies": {
             "Dynamicweb.AI.MicrosoftExtensionsOpenAI": {
               "target": "Package",
-              "version": "[10.21.9, )"
+              "version": "[10.22.9, )"
             },
             "Microsoft.Extensions.AI": {
               "target": "Package",
-              "version": "[10.1.0, )"
+              "version": "[10.3.0, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.3, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.3, )"
             },
             "Microsoft.Extensions.Options": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.3, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.3, )"
             },
             "Microsoft.Extensions.Options.DataAnnotations": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.3, )"
+            },
+            "ModelContextProtocol": {
+              "target": "Package",
+              "version": "[0.8.0-preview.1, )"
             },
             "OllamaSharp": {
               "target": "Package",
@@ -240,10 +244,6 @@
             "System.ComponentModel.Annotations": {
               "target": "Package",
               "version": "[5.0.0, )"
-            },
-            "mcpdotnet": {
-              "target": "Package",
-              "version": "[1.2.0.1, )"
             }
           },
           "imports": [
@@ -447,7 +447,7 @@
             },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[10.0.1, )"
+              "version": "[10.0.2, )"
             },
             "Serilog.Extensions.Hosting": {
               "target": "Package",

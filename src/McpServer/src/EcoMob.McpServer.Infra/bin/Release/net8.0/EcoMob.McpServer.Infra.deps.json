@@ -16,6 +16,7 @@
           "Microsoft.Extensions.Http.Polly": "10.0.1",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.1",
           "Microsoft.Extensions.Options.DataAnnotations": "10.0.1",
+          "Newtonsoft.Json": "13.0.4",
           "Serilog.Extensions.Hosting": "9.0.0",
           "Serilog.Sinks.Console": "6.0.0",
           "Serilog.Sinks.File": "6.0.0"
@@ -280,6 +281,14 @@
           }
         }
       },
+      "Newtonsoft.Json/13.0.4": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.4.30916"
+          }
+        }
+      },
       "Polly/7.2.4": {
         "runtime": {
           "lib/netstandard2.0/Polly.dll": {
@@ -534,6 +543,13 @@
       "sha512": "sha512-D3Bbdw8jNfxZZvYoM1yydpkhDKhzb34mSC3tvXQrPYA/wr86NUxMLeJkdE2Ct+sRVKDMPK5L5BgtwWtidLj5wg==",
       "path": "microsoft.net.http.headers/8.0.23",
       "hashPath": "microsoft.net.http.headers.8.0.23.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
+      "path": "newtonsoft.json/13.0.4",
+      "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
     },
     "Polly/7.2.4": {
       "type": "package",

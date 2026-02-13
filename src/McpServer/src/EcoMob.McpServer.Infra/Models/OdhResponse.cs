@@ -1,16 +1,16 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace EcoMob.McpServer.Infra.Models
 {
     public class OdhResponse<T>
     {
-        [JsonPropertyName("limit")]
+        [JsonProperty("limit")]
         public int Limit { get; set; }
 
-        [JsonPropertyName("offset")]
+        [JsonProperty("offset")]
         public int Offset { get; set; }
 
-        [JsonPropertyName("data")]
-        public List<T> Data { get; set; } = [];
+        [JsonProperty("data")]
+        public List<T> Data { get; set; } = new List<T>();
     }
 }

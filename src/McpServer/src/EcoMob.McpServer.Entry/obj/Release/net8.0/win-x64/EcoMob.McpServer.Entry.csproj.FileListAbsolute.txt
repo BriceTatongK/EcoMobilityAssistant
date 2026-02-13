@@ -252,3 +252,5 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpSer
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\Serilog.Extensions.Logging.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\Serilog.Sinks.Console.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\Serilog.Sinks.File.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\Newtonsoft.Json.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\obj\Release\net8.0\win-x64\EcoMob.McpServer.Entry.sourcelink.json

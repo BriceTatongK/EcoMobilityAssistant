@@ -1,0 +1,97 @@
+2026-02-12 10:19:02.852 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-12 10:19:02.936 +01:00 [INF] stdio-dotnet connecting.
+2026-02-12 10:19:02.949 +01:00 [INF] stdio-dotnet starting server process. Command: 'dotnet'.
+2026-02-12 10:19:03.089 +01:00 [INF] stdio-dotnet started server process with PID 18632.
+2026-02-12 10:19:03.104 +01:00 [INF] stdio-dotnet transport reading messages.
+2026-02-12 10:19:03.783 +01:00 [INF] stdio-dotnet received stderr log: 'Non è stato possibile eseguire perché il comando o il file specificato non è stato trovato.'.
+2026-02-12 10:19:03.806 +01:00 [INF] stdio-dotnet transport message parsing failed.
+System.Text.Json.JsonException: 'I' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: 'I' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObject(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.ProcessMessageAsync(String line, CancellationToken cancellationToken)
+2026-02-12 10:19:03.889 +01:00 [INF] stdio-dotnet transport message parsing failed.
+System.Text.Json.JsonException: '*' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: '*' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObject(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.ProcessMessageAsync(String line, CancellationToken cancellationToken)
+2026-02-12 10:19:03.892 +01:00 [INF] stdio-dotnet transport message parsing failed.
+System.Text.Json.JsonException: '*' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: '*' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObject(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.ProcessMessageAsync(String line, CancellationToken cancellationToken)
+2026-02-12 10:19:03.893 +01:00 [INF] stdio-dotnet transport message parsing failed.
+System.Text.Json.JsonException: '*' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: '*' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadFirstToken(Byte first)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObject(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 utf8Json, JsonTypeInfo jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpanAsObject(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize(ReadOnlySpan`1 json, JsonTypeInfo jsonTypeInfo)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.ProcessMessageAsync(String line, CancellationToken cancellationToken)
+2026-02-12 10:19:03.895 +01:00 [INF] stdio-dotnet transport completed reading messages.
+2026-02-12 10:19:03.917 +01:00 [INF] stdio-dotnet shutting down.
+2026-02-12 10:19:03.922 +01:00 [INF] stdio-dotnet shut down.
+2026-02-12 10:19:03.971 +01:00 [ERR] Failed to create IMcpClient.
+System.IO.IOException: MCP server process exited unexpectedly (exit code: 1)
+Server's stderr tail:
+Non è stato possibile eseguire perché il comando o il file specificato non è stato trovato.
+   at System.Threading.Channels.AsyncOperation`2.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.ConnectAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at EcoMob.Infra.Extensions.InfraLayerConfig.<>c.<RegisterMcpInfrastructure>b__1_1(IServiceProvider sp) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Extensions\InfraLayerConfig.cs:line 113
+2026-02-12 10:19:14.365 +01:00 [DBG] IntentClassifierAgent disposed its chat client.

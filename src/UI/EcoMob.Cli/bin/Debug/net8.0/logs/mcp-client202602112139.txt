@@ -1,0 +1,35 @@
+2026-02-11 21:39:13.357 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-11 21:39:13.572 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-11 21:39:13.586 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: '../McpServer/src/EcoMob.McpServer.Entry/bin/Release/net8.0/win-x64/publish/EcoMob.McpServer.Entry.exe'.
+2026-02-11 21:39:13.702 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 3544.
+2026-02-11 21:39:13.723 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-11 21:39:13.841 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe received stderr log: ''..' is not recognized as an internal or external command,'.
+2026-02-11 21:39:13.842 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe received stderr log: 'operable program or batch file.'.
+2026-02-11 21:39:13.848 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport completed reading messages.
+2026-02-11 21:39:13.868 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shutting down.
+2026-02-11 21:39:13.879 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shut down.
+2026-02-11 21:39:14.055 +01:00 [ERR] stdio-EcoMob-McpServer-Entry-exe transport send failed for message ID '1'.
+System.IO.IOException: The pipe is being closed.
+   at System.IO.RandomAccess.WriteAtOffset(SafeFileHandle handle, ReadOnlySpan`1 buffer, Int64 fileOffset)
+   at System.IO.RandomAccess.<>c.<WriteAtOffsetAsync>b__21_0(ValueTuple`4 state)
+   at System.Threading.AsyncOverSyncWithIoCancellation.InvokeAsync[TState](Action`1 action, TState state, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.IO.Strategies.BufferedFileStreamStrategy.WriteToNonSeekableAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.StreamWriter.<FlushAsyncInternal>g__Core|76_0(Boolean flushStream, Boolean flushEncoder, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.SendMessageAsync(JsonRpcMessage message, CancellationToken cancellationToken)
+2026-02-11 21:39:14.187 +01:00 [ERR] Failed to create IMcpClient.
+System.IO.IOException: MCP server process exited unexpectedly (exit code: 1)
+Server's stderr tail:
+'..' is not recognized as an internal or external command,
+operable program or batch file.
+   at System.Threading.Channels.AsyncOperation`2.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.ConnectAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at EcoMob.Infra.Extensions.InfraLayerConfig.<>c.<RegisterMcpInfrastructure>b__1_1(IServiceProvider sp) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Extensions\InfraLayerConfig.cs:line 101

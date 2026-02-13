@@ -1,0 +1,24 @@
+2026-02-13 21:16:35.526 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"method":"ping","params":{},"id":11,"jsonrpc":"2.0"}
+2026-02-13 21:16:35.531 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 11
+2026-02-13 21:16:35.531 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 11
+2026-02-13 21:16:35.531 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-13 21:16:35.532 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method ping
+2026-02-13 21:16:35.543 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method ping
+2026-02-13 21:16:35.543 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 11, JSON {"jsonrpc":"2.0","id":11,"result":{}}
+2026-02-13 21:16:35.543 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 11
+2026-02-13 21:16:35.546 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"method":"tools/list","params":{},"id":12,"jsonrpc":"2.0"}
+2026-02-13 21:16:35.547 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 12
+2026-02-13 21:16:35.547 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 12
+2026-02-13 21:16:35.547 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-13 21:16:35.547 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method tools/list
+2026-02-13 21:16:35.547 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method tools/list
+2026-02-13 21:16:35.547 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 12, JSON {"jsonrpc":"2.0","id":12,"result":{"tools":[{"name":"/status","description":"","inputSchema":{"type":"object","properties":{"context":{"type":"object","description":""}},"required":["context"]}},{"name":"get_stations","description":"Gets stations informations based on station type and language.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"language":{"type":"string","description":""}},"required":["station","language"]}},{"name":"get_latest_measurements","description":"Gets latest measurements for a specific station type and data type.","inputSchema":{"type":"object","properties":{"station":{"type":"string","description":""},"dataType":{"type":"string","description":""}},"required":["station","dataType"]}}]}}
+2026-02-13 21:16:35.547 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 12
+2026-02-13 21:16:36.450 +01:00 [INF] Transport received message for Server (stdio) (Mobility-MCP-Server): {"method":"tools/call","params":{"name":"get_stations","arguments":{"station":"ebike","language":"en"}},"id":13,"jsonrpc":"2.0"}
+2026-02-13 21:16:36.450 +01:00 [INF] Transport received message parsed for Server (stdio) (Mobility-MCP-Server): 13
+2026-02-13 21:16:36.450 +01:00 [INF] Transport message written for Server (stdio) (Mobility-MCP-Server) with ID 13
+2026-02-13 21:16:36.450 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)
+2026-02-13 21:16:36.450 +01:00 [INF] Request handler called for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method tools/call
+2026-02-13 21:16:36.451 +01:00 [INF] Request handler completed for Server (Mobility-MCP-Server 1.0.0), Client (EcoMob.Cli 1.0.0.0) with method tools/call
+2026-02-13 21:16:36.451 +01:00 [INF] Transport sending message for Server (stdio) (Mobility-MCP-Server) with ID 13, JSON {"jsonrpc":"2.0","id":13,"result":{"content":[{"type":"text","text":"The JSON value could not be converted to EcoMob.McpServer.Contracts.Models.StationType. Path: $ | LineNumber: 0 | BytePositionInLine: 7."}],"isError":true}}
+2026-02-13 21:16:36.451 +01:00 [INF] Transport message sent for Server (stdio) (Mobility-MCP-Server) with ID 13

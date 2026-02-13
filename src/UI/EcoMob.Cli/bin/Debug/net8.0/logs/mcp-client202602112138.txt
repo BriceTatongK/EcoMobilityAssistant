@@ -1,0 +1,2 @@
+2026-02-11 21:38:52.474 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-11 21:38:52.635 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).

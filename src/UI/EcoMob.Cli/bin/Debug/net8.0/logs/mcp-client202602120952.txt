@@ -1,0 +1,18 @@
+2026-02-12 09:52:00.041 +01:00 [INF] stdio-dotnet transport completed reading messages.
+2026-02-12 09:52:00.065 +01:00 [INF] stdio-dotnet shutting down.
+2026-02-12 09:52:00.068 +01:00 [INF] stdio-dotnet shut down.
+2026-02-12 09:52:00.111 +01:00 [ERR] Failed to create IMcpClient.
+System.IO.IOException: MCP server process exited unexpectedly (exit code: 1)
+Server's stderr tail:
+Non è stato possibile eseguire perché il comando o il file specificato non è stato trovato.
+   at System.Threading.Channels.AsyncOperation`2.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.ConnectAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at EcoMob.Infra.Extensions.InfraLayerConfig.<>c.<RegisterMcpInfrastructure>b__1_1(IServiceProvider sp) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Extensions\InfraLayerConfig.cs:line 113

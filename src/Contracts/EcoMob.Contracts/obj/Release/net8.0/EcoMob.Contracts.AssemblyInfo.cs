@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoMob.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a0e8a63135e8177b79ee953226c84222c9a8ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoMob.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoMob.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

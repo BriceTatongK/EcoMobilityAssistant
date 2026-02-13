@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMob.McpSseServer.WebApp"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{C1A037AA-91CA-4003-BF06-566040951863}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoMob.McpServer.Tests", "src\McpServer\src\EcoMob.McpServer.Tests\EcoMob.McpServer.Tests.csproj", "{40BF8181-F733-48F5-979F-2D744624AB45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{BB93742E-B7B7-440E-B360-D92FB466A20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB93742E-B7B7-440E-B360-D92FB466A20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB93742E-B7B7-440E-B360-D92FB466A20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40BF8181-F733-48F5-979F-2D744624AB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BF8181-F733-48F5-979F-2D744624AB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BF8181-F733-48F5-979F-2D744624AB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BF8181-F733-48F5-979F-2D744624AB45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +115,7 @@ Global
 		{6BE5CA41-A715-4BBD-BED2-4A519B4648F4} = {8503FDAE-18E5-4BC8-8EAD-64324F73C452}
 		{D0D2C559-38F2-4147-A511-10F057FC03A7} = {8503FDAE-18E5-4BC8-8EAD-64324F73C452}
 		{BB93742E-B7B7-440E-B360-D92FB466A20C} = {8503FDAE-18E5-4BC8-8EAD-64324F73C452}
+		{40BF8181-F733-48F5-979F-2D744624AB45} = {8503FDAE-18E5-4BC8-8EAD-64324F73C452}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5B9ED96-3E85-4F49-9CC6-DB201F0FD352}

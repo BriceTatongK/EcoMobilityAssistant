@@ -1,0 +1,10 @@
+2026-02-12 10:27:35.126 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-12 10:27:35.275 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-12 10:27:47.426 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-12 10:27:47.480 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-12 10:27:47.490 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: 'C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\publish\EcoMob.McpServer.Entry.exe'.
+2026-02-12 10:27:47.555 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 34416.
+2026-02-12 10:27:47.572 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-12 10:27:49.092 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '1'.
+2026-02-12 10:27:49.146 +01:00 [INF] IMcpClient created successfully.
+2026-02-12 10:27:49.146 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).

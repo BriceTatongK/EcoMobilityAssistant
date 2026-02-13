@@ -1,10 +1,10 @@
-﻿using EcoMob.Cli;
+﻿using Serilog;
+using EcoMob.Cli;
 using EcoMob.Core.Extensions;
 using EcoMob.Infra.Extensions;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Serilog;
+using Microsoft.Extensions.DependencyInjection;
 
 using IHost host = Host.CreateDefaultBuilder(args)
 
@@ -14,15 +14,14 @@ using IHost host = Host.CreateDefaultBuilder(args)
         // Config Serilog
         Log.Logger = new LoggerConfiguration()
             .MinimumLevel
-            .Information()
+            .Debug()
             .WriteTo
             .File("logs/mcp-client.txt", rollingInterval: RollingInterval.Minute)
             .CreateLogger();
 
         logging.ClearProviders();
-        logging.AddSerilog();
+        logging.AddSerilog(Log.Logger);
     })
-
 
     .ConfigureServices((hostContext, services) =>
     {

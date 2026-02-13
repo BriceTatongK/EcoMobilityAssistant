@@ -13,3 +13,4 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpSer
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\refint\EcoMob.McpServer.Core.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.pdb
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\ref\EcoMob.McpServer.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Core\obj\Release\net8.0\EcoMob.McpServer.Core.sourcelink.json

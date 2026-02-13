@@ -1,4 +1,4 @@
-﻿using System.Text.Json.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace EcoMob.McpServer.Infra.Models
 {
@@ -18,29 +18,29 @@ namespace EcoMob.McpServer.Infra.Models
 
     public abstract class BaseMobilityDto
     {
-        [JsonPropertyName("scode")] public string? StationCode { get; set; }
-        [JsonPropertyName("sname")] public string? StationName { get; set; }
-        [JsonPropertyName("sactive")] public bool? IsActive { get; set; }
-        [JsonPropertyName("savailable")] public bool? IsAvailable { get; set; }
-        [JsonPropertyName("scoordinate")] public CoordinateDto? Coordinate { get; set; }
-        [JsonPropertyName("sorigin")] public string? Origin { get; set; }
+        [JsonProperty("scode")] public string? StationCode { get; set; }
+        [JsonProperty("sname")] public string? StationName { get; set; }
+        [JsonProperty("sactive")] public bool? IsActive { get; set; }
+        [JsonProperty("savailable")] public bool? IsAvailable { get; set; }
+        [JsonProperty("scoordinate")] public CoordinateDto? Coordinate { get; set; }
+        [JsonProperty("sorigin")] public string? Origin { get; set; }
 
 
         // Measurement / "Latest" Fields
-        [JsonPropertyName("_timestamp")] public DateTime? LastUpdate { get; set; }
-        [JsonPropertyName("mvalue")] public double? CurrentValue { get; set; }
-        [JsonPropertyName("tname")] public string? MeasurementType { get; set; }
+        [JsonProperty("_timestamp")] public DateTime? LastUpdate { get; set; }
+        [JsonProperty("mvalue")] public double? CurrentValue { get; set; }
+        [JsonProperty("tname")] public string? MeasurementType { get; set; }
 
 
         // Parent info (if applicable)
-        [JsonPropertyName("pcode")] public string? ParentCode { get; set; }
+        [JsonProperty("pcode")] public string? ParentCode { get; set; }
     }
 
 
     // 1. Bicycles & Sharing
     public class BicycleStationDto : BaseMobilityDto
     {
-        [JsonPropertyName("smetadata")] public BicycleMeta? Metadata { get; set; }
+        [JsonProperty("smetadata")] public BicycleMeta? Metadata { get; set; }
     }
 
     public class BicycleMeta
@@ -52,7 +52,7 @@ namespace EcoMob.McpServer.Infra.Models
     // 2. Parking & Car Sharing (Handles items 2, 5, and 7)
     public class ParkingStationDto : BaseMobilityDto
     {
-        [JsonPropertyName("smetadata")] public ParkingMeta? Metadata { get; set; }
+        [JsonProperty("smetadata")] public ParkingMeta? Metadata { get; set; }
     }
 
     public class ParkingMeta
@@ -71,7 +71,7 @@ namespace EcoMob.McpServer.Infra.Models
     // 3. Charging Stations (Handles items 3 and 6)
     public class ChargingStationDto : BaseMobilityDto
     {
-        [JsonPropertyName("smetadata")] public ChargingMetaDto? Metadata { get; set; }
+        [JsonProperty("smetadata")] public ChargingMetaDto? Metadata { get; set; }
     }
 
     public class ChargingMetaDto
@@ -80,7 +80,20 @@ namespace EcoMob.McpServer.Infra.Models
         public int? Capacity { get; set; }
         public int? TotalBays { get; set; }
         public string? Address { get; set; }
+
+        public List<OutletDto>? Outlets { get; set; }
     }
+
+    public class OutletDto
+    {
+        public string? Id { get; set; }
+        public int? MaxPower { get; set; }
+        public int? MaxCurrent { get; set; }
+        public int? MinCurrent { get; set; }
+        public bool? HasFixedCable { get; set; }
+        public string? OutletTypeCode { get; set; }
+    }
+
 
     public class NetexParkingDto
     {
@@ -91,7 +104,7 @@ namespace EcoMob.McpServer.Infra.Models
         public string? Reservation { get; set; }
         public string? VehicleTypes { get; set; }
 
-        [JsonPropertyName("hazard_prohibited")]
+        [JsonProperty("hazard_prohibited")]
         public bool? HazardProhibited { get; set; }
     }
 }

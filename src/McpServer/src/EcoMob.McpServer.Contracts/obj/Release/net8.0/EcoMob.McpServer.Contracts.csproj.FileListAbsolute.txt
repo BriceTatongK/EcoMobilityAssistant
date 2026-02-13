@@ -9,3 +9,4 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpSer
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Contracts\obj\Release\net8.0\refint\EcoMob.McpServer.Contracts.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Contracts\obj\Release\net8.0\EcoMob.McpServer.Contracts.pdb
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Contracts\obj\Release\net8.0\ref\EcoMob.McpServer.Contracts.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Contracts\obj\Release\net8.0\EcoMob.McpServer.Contracts.sourcelink.json

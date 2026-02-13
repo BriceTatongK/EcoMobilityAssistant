@@ -2,15 +2,13 @@
 using EcoMob.Infra.Models;
 using EcoMob.Infra.Services;
 using EcoMob.Infra.Settings;
-using McpDotNet.Client;
-using McpDotNet.Configuration;
-using McpDotNet.Protocol.Transport;
-using McpDotNet.Protocol.Types;
 using Microsoft.Extensions.AI;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ModelContextProtocol.Client;
+using ModelContextProtocol.Protocol;
 using OllamaSharp;
 using OpenAI;
 
@@ -63,19 +61,33 @@ namespace EcoMob.Infra.Extensions
                 {
                     var fullUrl = settings.SseUrl ?? throw new InvalidOperationException("SSE URL missing");
                     var httpClient = new HttpClient { BaseAddress = new Uri(fullUrl + "/sse") };
-                    return new SseClientTransport(new SseClientTransportOptions(), PrepareServerConfig(settings), httpClient, loggerFactory);
+
+                    //return new SseClientTransport(new Uri(fullUrl + "/sse")); // your MCP server SSE endpoint
                 }
+
+                var serverExe = Path.GetFullPath(settings.ServerPath!);
+
+                if (!File.Exists(serverExe))
+                    throw new FileNotFoundException("MCP server exe not found!", serverExe);
 
                 // Default: stdio
                 return new StdioClientTransport(new StdioClientTransportOptions
                 {
-                    Command = "dotnet",
-                    Arguments = $"run --project \"{settings.ServerPath}\" --nologo -v q"
-                }, PrepareServerConfig(settings), loggerFactory);
+                    //Command = "dotnet",
+                    //Arguments = new List<string>
+                    //{
+                    //    $"run --project \"{settings.ServerPath}\" --nologo -v q"
+                    //    //$"run --project \"../McpServer/src/EcoMob.McpServer.Entry\" --nologo -v q"
+                    //},
+
+                    Command = settings.ServerPath!,
+                    Arguments = []
+
+                }, loggerFactory);
             });
 
             // Registrazione del Client che consuma il Transport iniettato
-            services.AddScoped<IMcpClient>(sp =>
+            services.AddScoped<McpClient>(sp =>
             {
                 var settings = sp.GetRequiredService<IOptions<McpSettings>>().Value;
                 var transport = sp.GetRequiredService<IClientTransport>();
@@ -95,7 +107,7 @@ namespace EcoMob.Infra.Extensions
                         }
                     };
 
-                    var client = McpClientFactory.CreateAsync(PrepareServerConfig(settings), clientOptions, null, loggerFactory)
+                    var client = McpClient.CreateAsync(transport)
                                                 .GetAwaiter()
                                                 .GetResult();
 
@@ -167,7 +179,7 @@ namespace EcoMob.Infra.Extensions
             if (settings.UseLocalModel)
             {
                 logger.LogDebug("Creating Local Ollama client (model={Model}).", modelName);
-                var model = new OllamaApiClient(new Uri(settings.LocalModelUrl), modelName);
+                var model = new OllamaApiClient(new Uri(settings.LocalModelUrl!), modelName);
                 return model;
             }
 
@@ -188,32 +200,32 @@ namespace EcoMob.Infra.Extensions
         /// <returns>A configured McpServerConfig instance representing either a remote server (using SSE) or a local server
         /// (using standard input/output), depending on the provided settings.</returns>
         /// <exception cref="InvalidOperationException">Thrown if the required SSE URL or server path is missing from the settings.</exception>
-        private static McpServerConfig PrepareServerConfig(McpSettings settings)
-        {
-            if (settings.TransportType.Equals("sse", StringComparison.OrdinalIgnoreCase))
-            {
-                // Configurazione per server remoto tramite HTTP/SSE
-                return new McpServerConfig
-                {
-                    Id = "EcoMobilityServer", // Un identificativo univoco per la sessione
-                    Name = "EcoMobility-McpServer",
-                    TransportType = settings.TransportType,
-                    Location = settings.SseUrl ?? throw new InvalidOperationException("SSE URL missing"),
-                };
-            }
-            else
-            {
-                // Configurazione per server locale tramite Standard Input/Output
-                return new McpServerConfig
-                {
-                    Id = "EcoMobilityServer",
-                    Name = "EcoMobility-McpServer",
-                    TransportType = settings.TransportType,
-                    Location = settings.ServerPath ?? throw new InvalidOperationException("Server Path missing"),
-                    Arguments = new[] { "run", "--project", settings.ServerPath ?? throw new InvalidOperationException("Server Path missing") }
-                };
-            }
-        }
+        //private static McpServerConfig PrepareServerConfig(McpSettings settings)
+        //{
+        //    if (settings.TransportType.Equals("sse", StringComparison.OrdinalIgnoreCase))
+        //    {
+        //        // Configurazione per server remoto tramite HTTP/SSE
+        //        return new McpServerConfig
+        //        {
+        //            Id = "EcoMobilityServer", // Un identificativo univoco per la sessione
+        //            Name = "EcoMobility-McpServer",
+        //            TransportType = settings.TransportType,
+        //            Location = settings.SseUrl ?? throw new InvalidOperationException("SSE URL missing"),
+        //        };
+        //    }
+        //    else
+        //    {
+        //        // Configurazione per server locale tramite Standard Input/Output
+        //        return new McpServerConfig
+        //        {
+        //            Id = "EcoMobilityServer",
+        //            Name = "EcoMobility-McpServer",
+        //            TransportType = settings.TransportType,
+        //            Location = settings.ServerPath ?? throw new InvalidOperationException("Server Path missing"),
+        //            Arguments = new[] { "run", "--project", settings.ServerPath ?? throw new InvalidOperationException("Server Path missing") }
+        //        };
+        //    }
+        //}
 
 
         //public class LanguageDetectionMiddleware : DelegatingChatClient
@@ -253,7 +265,7 @@ namespace EcoMob.Infra.Extensions
             private readonly List<ChatMessage> _history = [];
             private readonly int _maxHistoryItems;
 
-            public ChatHistoryMiddleware(IChatClient innerClient, int maxHistoryItems = 10)
+            public ChatHistoryMiddleware(Microsoft.Extensions.AI.IChatClient innerClient, int maxHistoryItems = 10)
                 : base(innerClient) { _maxHistoryItems = maxHistoryItems; }
 
             public override async Task<ChatResponse> GetResponseAsync(

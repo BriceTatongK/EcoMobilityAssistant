@@ -1,0 +1,3 @@
+2026-02-11 21:47:32.216 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-11 21:47:32.383 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-11 21:47:42.276 +01:00 [DBG] IntentClassifierAgent disposed its chat client.

@@ -1,24 +1,31 @@
-﻿using EcoMob.Contracts.Enums;
+﻿using System.Text.Json;
+using EcoMob.Infra.Models;
+using EcoMob.Infra.Helpers;
+using EcoMob.Infra.Logging;
+using EcoMob.Contracts.Enums;
 using EcoMob.Contracts.Models;
 using EcoMob.Contracts.Services;
-using EcoMob.Infra.Logging;
-using EcoMob.Infra.Models;
-using McpDotNet.Client;
-using McpDotNet.Protocol.Types;
-using Microsoft.Extensions.AI;
-using Microsoft.Extensions.DependencyInjection;
+using ModelContextProtocol.Client;
 using Microsoft.Extensions.Logging;
-using System.Text.Json;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.AI;
 
 namespace EcoMob.Infra.Services
 {
+    // Helper class pour la sélection du tool
+    internal class ToolSelection
+    {
+        public string tool { get; set; } = string.Empty;
+        public Dictionary<string, object>? arguments { get; set; }
+    }
+
     public class ReasoningAgent : IReasoningAgent, IDisposable
     {
-        private readonly IMcpClient _mcpClient;
+        private readonly McpClient _mcpClient;
         private readonly IChatClient _chatClient;
         private readonly ILogger<ReasoningAgent> _logger;
 
-        public ReasoningAgent(IMcpClient mcpClient,
+        public ReasoningAgent(McpClient mcpClient,
             [FromKeyedServices(AgentRole.Reasoning)] IChatClient chatClient,
             ILogger<ReasoningAgent> logger)
         {
@@ -35,44 +42,121 @@ namespace EcoMob.Infra.Services
             CancellationToken ct = default)
         {
             if (intent.Type == IntentType.UNKNOWN || string.IsNullOrWhiteSpace(userPrompt))
-            {
-                using var _ = _logger.BeginAgentScope(nameof(ReasoningAgent));
-                _logger.LogWarning("ProcessAsync called with empty prompt or an unknown intent.");
                 return string.Empty;
-            }
+
+            using var _ = _logger.BeginAgentScope(nameof(ReasoningAgent));
+            _logger.LogDebug("ProcessAsync: starting MCP handshake.");
+            await _mcpClient.PingAsync(cancellationToken: ct);
 
             try
             {
-                using var _ = _logger.BeginAgentScope(nameof(ReasoningAgent));
-                _logger.LogDebug("ProcessAsync: starting MCP handshake.");
-                await _mcpClient.PingAsync(ct);
-
                 _logger.LogDebug("ProcessAsync: enumerating MCP tools.");
-                var mcpTools = new List<Tool>();
-                await foreach (var tool in _mcpClient.ListToolsAsync(ct))
-                {
-                    mcpTools.Add(tool);
-                }
+                var mcpTools = await _mcpClient.ListToolsAsync(cancellationToken: ct);
 
                 _logger.LogDebug("ProcessAsync: found {Count} MCP tools.", mcpTools.Count);
 
-                var aiFunctions = mcpTools.Select(t => AIFunctionFactory.Create(
-                    async (Dictionary<string, object?> args) =>
-                    {
-                        var result = await _mcpClient.CallToolAsync(t.Name, args!, ct);
+                // Si aucun tool disponible
+                if (!mcpTools.Any())
+                {
+                    return "I have no tools to help with that.";
+                }
 
-                        return string.Join("\n", result.Content
-                            .Where(c => c.Type == "text" && c.Text != null)
-                            .Select(c => c.Text));
-                    },
-
-                    t.Name,
-                    t.Description)).Cast<AITool>().ToList();
-
-                _logger.LogDebug("ProcessAsync: invoking chat model with tools (count={Count}).", aiFunctions.Count);
-
+                // 1️⃣ Demande au modèle de choisir le tool et ses arguments
                 string intentDetails = intent.Type.ToFormattedString();
                 string specificGuardrails = string.Join("\n- ", intent.Guardrails);
+
+                var toolsText = string.Join(
+                    Environment.NewLine,
+                    mcpTools.Select(ToolHelpers.FormatTool)
+                );
+
+                string format = @"{
+                  ""tool"": ""tool_name"",
+                  ""arguments"": {
+                    ""param1"": ""value"",
+                    ""param2"": ""value""
+                  }
+                }";
+
+                var toolSelectionPrompt = $"""
+                ROLE:
+                You are the Reasoning Agent for EcoMobility Assistant.
+
+                GOAL:
+                {intentDetails}
+
+                GUARDRAILS:
+                - {specificGuardrails}
+
+                USER REQUEST:
+                {userPrompt}
+
+                AVAILABLE TOOLS:
+                {toolsText}
+
+                INSTRUCTIONS:
+                1. Select the single most appropriate tool.
+                2. Carefully read its Input Schema.
+                3. Provide ALL required parameters.
+                4. Use only allowed enum values.
+                5. Do not invent parameters.
+                6. If a required value is missing from the user request, infer it cautiously.
+                7. Output valid JSON only in this exact format:
+
+                {format}
+
+                Do NOT answer the user.
+                Only output JSON.
+                """;
+
+                var selectionResponse = await _chatClient.GetResponseAsync(
+                    new List<ChatMessage> { new(ChatRole.System, toolSelectionPrompt) },
+                    new ChatOptions { Temperature = 0.2f },
+                    ct
+                );
+
+                // Parse le JSON choisi par le modèle
+                ToolSelection? selection = JsonSerializer.Deserialize<ToolSelection>(selectionResponse.ToString()!);
+
+                if (selection == null || string.IsNullOrEmpty(selection.tool))
+                {
+                    return "The model did not select a valid tool.";
+                }
+
+                // 2️⃣ Appelle le tool MCP choisi
+                // Sérialisation des arguments pour gérer enum, types natifs
+                var toolArgs = new Dictionary<string, object?>();
+                if (selection.arguments != null)
+                {
+                    foreach (var kvp in selection.arguments)
+                    {
+                        var value = kvp.Value;
+                        // Enum → string
+                        if (value != null && value.GetType().IsEnum)
+                            value = value.ToString();
+                        toolArgs[kvp.Key] = value;
+                    }
+                }
+
+                _logger.LogDebug("Calling MCP tool {Tool} with arguments: {Args}", selection.tool, JsonSerializer.Serialize(toolArgs));
+
+                var toolResult = await _mcpClient.CallToolAsync(selection.tool, toolArgs!, cancellationToken: ct);
+
+                // Convertit le résultat MCP en texte lisible
+                var toolText = string.Join("\n", toolResult.StructuredContent?.ToString());
+
+                // 3️⃣ Prompt final pour synthèse humaine
+                string finalPrompt = $"""
+                    The user asked: {userPrompt}
+
+                    Tool '{selection.tool}' returned the following data:
+                    {toolText}
+
+                    Based on this, generate a concise, human-readable answer.
+                    - Follow the guardrails.
+                    - Use markdown, bullet points, minimal icons.
+                    - Keep it short and actionable.
+                    """;
 
                 string systemPrompt = $"""
                     ROLE:
@@ -119,7 +203,7 @@ namespace EcoMob.Infra.Services
                        - If the tool returns no results or an error:
                          - Explain briefly and clearly.
                          - Suggest the closest viable alternative.
-                         - Example: ""Non ho trovato parcheggi a Milano Centro, ma ce ne sono 2 entro 1 km.""
+                         - Example: "“I couldn’t find any parking in Milan city center, but there are two options within 1 km.”"
 
                     4. Tone  
                        - Professional, helpful, and eco-conscious 🌱.
@@ -135,41 +219,44 @@ namespace EcoMob.Infra.Services
                     7. Human-Readable Output  
                        - Always translate tool data into natural language.
                        - Example:
-                         ""Ho trovato 3 parcheggi vicino a te:
-                         - Parking A – 500 m · disponibile
-                         - Parking B – 1 km · pochi posti
-                         - Parking C – 2 km · colonnine EV ⚡""
+                         “I found 3 parking options near you:
+                         . Parking A – 500 m · available
+                         . Parking B – 1 km · limited availability
+                         . Parking C – 2 km · EV charging stations ⚡”
                     """;
 
+                var finalResponse = await _chatClient.GetResponseAsync(
+                    [
+                        new(ChatRole.System, systemPrompt), // ton prompt système original
+                        new(ChatRole.User, finalPrompt)
+                    ],
+                    new ChatOptions { Temperature = 0.5f },
+                    ct
+                );
 
-                var messages = new List<ChatMessage>
-                {
-                    new(ChatRole.System, systemPrompt),
-                    new(ChatRole.User, userPrompt)
-                };
+                _logger.LogInformation("ProcessAsync: model responded (length={Length}).", finalResponse?.ToString()?.Length ?? 0);
 
-                var response = await _chatClient.GetResponseAsync(messages, new ChatOptions
-                {
-                    Temperature = 0.5f,
-                    Tools = aiFunctions,
-                    ToolMode = ChatToolMode.Auto
-                }, ct);
-
-                _logger.LogInformation("ProcessAsync: model responded (length={Length}).", response?.ToString()?.Length ?? 0);
-                return string.IsNullOrEmpty(response?.ToString())
-                    ? "An error occurred while processing your request. Please try again later." : response.ToString();
+                return string.IsNullOrEmpty(finalResponse?.ToString())
+                    ? "An error occurred while processing your request. Please try again later."
+                    : finalResponse.ToString();
             }
             catch (OperationCanceledException)
             {
                 _logger.LogInformation("ProcessAsync cancelled by caller.");
                 throw;
             }
+            catch (JsonException jex)
+            {
+                _logger.LogError(jex, "Error while trying to deserialise");
+                throw new Exception($"Error while handling the request: {jex.Message}");
+            }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error while processing prompt in ReasoningAgent.");
-                return "An error occurred while processing your request. Please try again later.";
+                throw new Exception($"Error while handling the request: {ex.Message}");
             }
         }
+
 
 
         /// <summary>

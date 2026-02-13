@@ -1,0 +1,12 @@
+2026-02-13 14:40:39.965 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 14:40:40.113 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 14:40:40.123 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-13 14:40:40.164 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-13 14:40:40.176 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: 'C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\publish\EcoMob.McpServer.Entry.exe'.
+2026-02-13 14:40:40.335 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 27120.
+2026-02-13 14:40:40.351 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-13 14:40:41.822 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '1'.
+2026-02-13 14:40:41.872 +01:00 [INF] IMcpClient created successfully.
+2026-02-13 14:40:41.872 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-13 14:40:55.162 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=24).
+2026-02-13 14:40:58.244 +01:00 [DBG] ValidateAsync: validation result: isValid=true.

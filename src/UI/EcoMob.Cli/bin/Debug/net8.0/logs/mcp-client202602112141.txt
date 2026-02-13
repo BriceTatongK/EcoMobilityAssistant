@@ -1,0 +1,35 @@
+2026-02-11 21:41:36.663 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-11 21:41:36.813 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-11 21:41:48.231 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-11 21:41:48.280 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-11 21:41:48.289 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: 'C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Debug\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\win-x64\publish\EcoMob.McpServer.Entry.exe'.
+2026-02-11 21:41:48.367 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 11200.
+2026-02-11 21:41:48.386 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-11 21:41:48.473 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe received stderr log: 'The system cannot find the path specified.'.
+2026-02-11 21:41:48.478 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport completed reading messages.
+2026-02-11 21:41:48.494 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shutting down.
+2026-02-11 21:41:48.502 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shut down.
+2026-02-11 21:41:48.659 +01:00 [ERR] stdio-EcoMob-McpServer-Entry-exe transport send failed for message ID '1'.
+System.IO.IOException: The pipe is being closed.
+   at System.IO.RandomAccess.WriteAtOffset(SafeFileHandle handle, ReadOnlySpan`1 buffer, Int64 fileOffset)
+   at System.IO.RandomAccess.<>c.<WriteAtOffsetAsync>b__21_0(ValueTuple`4 state)
+   at System.Threading.AsyncOverSyncWithIoCancellation.InvokeAsync[TState](Action`1 action, TState state, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.IO.Strategies.BufferedFileStreamStrategy.WriteToNonSeekableAsync(ReadOnlyMemory`1 source, CancellationToken cancellationToken)
+   at System.IO.StreamWriter.<FlushAsyncInternal>g__Core|76_0(Boolean flushStream, Boolean flushEncoder, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.StreamClientSessionTransport.SendMessageAsync(JsonRpcMessage message, CancellationToken cancellationToken)
+2026-02-11 21:41:48.770 +01:00 [ERR] Failed to create IMcpClient.
+System.IO.IOException: MCP server process exited unexpectedly (exit code: 1)
+Server's stderr tail:
+The system cannot find the path specified.
+   at System.Threading.Channels.AsyncOperation`2.GetResult(Int16 token)
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+MoveNext()
+   at System.Threading.Channels.ChannelReader`1.ReadAllAsync(CancellationToken cancellationToken)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.ProcessMessagesCoreAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.McpSessionHandler.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.DisposeAsync()
+   at ModelContextProtocol.Client.McpClientImpl.ConnectAsync(CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at ModelContextProtocol.Client.McpClient.CreateAsync(IClientTransport clientTransport, McpClientOptions clientOptions, ILoggerFactory loggerFactory, CancellationToken cancellationToken)
+   at EcoMob.Infra.Extensions.InfraLayerConfig.<>c.<RegisterMcpInfrastructure>b__1_1(IServiceProvider sp) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Extensions\InfraLayerConfig.cs:line 103

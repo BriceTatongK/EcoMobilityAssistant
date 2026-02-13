@@ -76,3 +76,5 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpSer
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\obj\Release\net8.0\EcoMob.McpServer.Entry.pdb
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\obj\Release\net8.0\EcoMob.McpServer.Entry.genruntimeconfig.cache
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\obj\Release\net8.0\ref\EcoMob.McpServer.Entry.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\obj\Release\net8.0\EcoMob.McpServer.Entry.sourcelink.json

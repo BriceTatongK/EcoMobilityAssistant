@@ -34,7 +34,7 @@ namespace EcoMob.McpServer.Infra.Helpers
         {
             public override bool CanConvert(Type objectType)
             {
-                return typeof(BaseMobilityDto).IsAssignableFrom(objectType);
+                return objectType == typeof(BaseMobilityDto);
             }
 
             public override object? ReadJson(
@@ -52,13 +52,18 @@ namespace EcoMob.McpServer.Infra.Helpers
                 Type? targetType = stype switch
                 {
                     "bicycle" or "bicyclestationbay" => typeof(BicycleStationDto),
-                    "parkingstation" or "bikeparking" => typeof(ParkingStationDto),
-                    "echargingstation" or "bike_charger" => typeof(ChargingStationDto),
-                    _ => null
+
+                    "parkingstation" => typeof(ParkingStationDto),
+
+                    "bikeparking" => typeof(ParkingStationDto),
+
+                    "echargingstation" => typeof(ChargingStationDto),
+
+                    "echargingplug" => typeof(ChargingStationDto),
+
+                    _ => typeof(BaseMobilityDto) // fallback SAFE
                 };
 
-                if (targetType == null)
-                    return null;
 
                 // IMPORTANT: create a serializer clone without this converter
                 var innerSerializer = CreateInnerSerializer(serializer);

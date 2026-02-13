@@ -1,0 +1,5 @@
+2026-02-13 21:17:17.659 +01:00 [DBG] ReasoningAgent disposed its chat client.
+2026-02-13 21:17:17.940 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport completed reading messages.
+2026-02-13 21:17:17.973 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shutting down.
+2026-02-13 21:17:17.975 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe shut down.
+2026-02-13 21:17:17.975 +01:00 [DBG] IntentClassifierAgent disposed its chat client.

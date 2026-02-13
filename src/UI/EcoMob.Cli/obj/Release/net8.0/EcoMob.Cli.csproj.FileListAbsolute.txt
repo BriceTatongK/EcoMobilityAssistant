@@ -7,7 +7,6 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\n
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\Dynamicweb.AI.MicrosoftExtensionsOpenAI.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\Dynamicweb.Core.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\HtmlAgilityPack.dll
-C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\mcpdotnet.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\Microsoft.Extensions.AI.dll
@@ -128,3 +127,7 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Release\n
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Release\net8.0\EcoMob.Cli.pdb
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Release\net8.0\EcoMob.Cli.genruntimeconfig.cache
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Release\net8.0\ref\EcoMob.Cli.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\ModelContextProtocol.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\ModelContextProtocol.Core.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\bin\Release\net8.0\OllamaSharp.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\UI\EcoMob.Cli\obj\Release\net8.0\EcoMob.Cli.sourcelink.json

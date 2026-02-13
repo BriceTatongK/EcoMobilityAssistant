@@ -13,3 +13,4 @@ C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\obj\Release\net8.0\refint\EcoMob.Infra.dll
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\obj\Release\net8.0\EcoMob.Infra.pdb
 C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\obj\Release\net8.0\ref\EcoMob.Infra.dll
+C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\obj\Release\net8.0\EcoMob.Infra.sourcelink.json

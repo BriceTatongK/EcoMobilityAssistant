@@ -1,0 +1,19 @@
+2026-02-12 10:30:04.348 +01:00 [DBG] Creating IMcpClient for TransportType=stdio.
+2026-02-12 10:30:04.424 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe connecting.
+2026-02-12 10:30:04.438 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe starting server process. Command: 'C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry\bin\Release\net8.0\publish\EcoMob.McpServer.Entry.exe'.
+2026-02-12 10:30:04.593 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe started server process with PID 18368.
+2026-02-12 10:30:04.615 +01:00 [INF] stdio-EcoMob-McpServer-Entry-exe transport reading messages.
+2026-02-12 10:30:06.473 +01:00 [DBG] stdio-EcoMob-McpServer-Entry-exe transport received message with ID '1'.
+2026-02-12 10:30:06.527 +01:00 [INF] IMcpClient created successfully.
+2026-02-12 10:30:06.528 +01:00 [DBG] Creating OpenAI client (model=gpt-4o-mini).
+2026-02-12 10:30:21.803 +01:00 [DBG] ValidateAsync: sending prompt for validation (length=24).
+2026-02-12 10:30:24.598 +01:00 [ERR] Error during context validation.
+System.ClientModel.ClientResultException: HTTP 429 (insufficient_quota: insufficient_quota)
+
+You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+   at OpenAI.ClientPipelineExtensions.ProcessMessageAsync(ClientPipeline pipeline, PipelineMessage message, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(BinaryContent content, RequestOptions options)
+   at OpenAI.Chat.ChatClient.CompleteChatAsync(IEnumerable`1 messages, ChatCompletionOptions options, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.OpenAIChatClient.GetResponseAsync(IEnumerable`1 messages, ChatOptions options, CancellationToken cancellationToken)
+   at Microsoft.Extensions.AI.ChatClientStructuredOutputExtensions.GetResponseAsync[T](IChatClient chatClient, IEnumerable`1 messages, JsonSerializerOptions serializerOptions, ChatOptions options, Nullable`1 useJsonSchemaResponseFormat, CancellationToken cancellationToken)
+   at EcoMob.Infra.Services.ContextValidatorAgent.ValidateAsync(String prompt, CancellationToken ct) in C:\Users\JossT\source\repos\EcoMobilityAssistant\src\Infrastructure\EcoMob.Infra\Services\ContextValidatorAgent.cs:line 80

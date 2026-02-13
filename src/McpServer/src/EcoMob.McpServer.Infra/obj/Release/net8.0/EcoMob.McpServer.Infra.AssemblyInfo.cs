@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EcoMob.McpServer.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a0e8a63135e8177b79ee953226c84222c9a8ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("EcoMob.McpServer.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EcoMob.McpServer.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
