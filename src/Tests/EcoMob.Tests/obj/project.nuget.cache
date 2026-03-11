@@ -175,7 +175,7 @@
     {
       "code": "NU1901",
       "level": "Warning",
-      "message": "Il pacchetto 'Moq' 4.20.0 presenta una vulnerabilità nota di gravità bassa, https://github.com/advisories/GHSA-6r78-m64m-qwcf",
+      "message": "Package 'Moq' 4.20.0 has a known low severity vulnerability, https://github.com/advisories/GHSA-6r78-m64m-qwcf",
       "projectPath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
       "warningLevel": 1,
       "filePath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
@@ -187,10 +187,10 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Avvertenza come errore: È stato rilevato il downgrade del pacchetto Microsoft.Extensions.AI da 10.3.0 a 10.1.0. Fare riferimento al pacchetto direttamente dal progetto per selezionare una versione diversa. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.AI (>= 10.3.0) \r\n EcoMob.Tests -> Microsoft.Extensions.AI (>= 10.1.0)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Configuration from 10.0.3 to 10.0.1. Reference the package directly from the project to select a different version. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.Configuration (>= 10.0.3) \r\n EcoMob.Tests -> Microsoft.Extensions.Configuration (>= 10.0.1)",
       "projectPath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
       "filePath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
-      "libraryId": "Microsoft.Extensions.AI",
+      "libraryId": "Microsoft.Extensions.Configuration",
       "targetGraphs": [
         "net8.0"
       ]
@@ -198,7 +198,7 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Avvertenza come errore: È stato rilevato il downgrade del pacchetto Microsoft.Extensions.Options da 10.0.3 a 10.0.1. Fare riferimento al pacchetto direttamente dal progetto per selezionare una versione diversa. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.Options (>= 10.0.3) \r\n EcoMob.Tests -> Microsoft.Extensions.Options (>= 10.0.1)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Options from 10.0.3 to 10.0.1. Reference the package directly from the project to select a different version. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.Options (>= 10.0.3) \r\n EcoMob.Tests -> Microsoft.Extensions.Options (>= 10.0.1)",
       "projectPath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
       "filePath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
       "libraryId": "Microsoft.Extensions.Options",
@@ -209,10 +209,10 @@
     {
       "code": "NU1605",
       "level": "Error",
-      "message": "Avvertenza come errore: È stato rilevato il downgrade del pacchetto Microsoft.Extensions.Configuration da 10.0.3 a 10.0.1. Fare riferimento al pacchetto direttamente dal progetto per selezionare una versione diversa. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.Configuration (>= 10.0.3) \r\n EcoMob.Tests -> Microsoft.Extensions.Configuration (>= 10.0.1)",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.AI from 10.3.0 to 10.1.0. Reference the package directly from the project to select a different version. \r\n EcoMob.Tests -> EcoMob.Infra -> Microsoft.Extensions.AI (>= 10.3.0) \r\n EcoMob.Tests -> Microsoft.Extensions.AI (>= 10.1.0)",
       "projectPath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
       "filePath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Tests\\EcoMob.Tests\\EcoMob.Tests.csproj",
-      "libraryId": "Microsoft.Extensions.Configuration",
+      "libraryId": "Microsoft.Extensions.AI",
       "targetGraphs": [
         "net8.0"
       ]

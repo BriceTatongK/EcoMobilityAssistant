@@ -1,8 +1,0 @@
-2026-02-12 10:04:14.043 +01:00 [INF] MCP Server starting ...
-2026-02-12 10:04:14.111 +01:00 [DBG] Hosting starting
-2026-02-12 10:04:14.154 +01:00 [INF] Application started. Press Ctrl+C to shut down.
-2026-02-12 10:04:14.162 +01:00 [INF] Hosting environment: Production
-2026-02-12 10:04:14.163 +01:00 [INF] Content root path: C:\Users\JossT\source\repos\EcoMobilityAssistant\src\McpServer\src\EcoMob.McpServer.Entry
-2026-02-12 10:04:14.163 +01:00 [DBG] Hosting started
-2026-02-12 10:04:14.170 +01:00 [INF] Transport entering read messages loop for Server (stdio) (Mobility-MCP-Server)
-2026-02-12 10:04:14.171 +01:00 [INF] Transport waiting for message for Server (stdio) (Mobility-MCP-Server)

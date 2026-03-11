@@ -1,3 +1,0 @@
-2026-02-08 17:06:40.088 +01:00 [DBG] HttpMessageHandler expired after 120000ms for client 'IEcoMobilityTimeseriesClient'
-2026-02-08 17:06:50.111 +01:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
-2026-02-08 17:06:50.115 +01:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0893ms - processed: 0 items - remaining: 1 items

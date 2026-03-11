@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\aimodels\\mcptoolprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\aimodels\\mcptoolprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\mcptransports\\stdiomcptransportclient .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\mcptransports\\stdiomcptransportclient .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\ui\\ecomob.cli\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|solutionrelative:src\\ui\\ecomob.cli\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\contracts\\ecomob.contracts\\dtos\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|solutionrelative:src\\contracts\\ecomob.contracts\\dtos\\tooldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\contracts\\ecomob.contracts\\services\\itoolprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|solutionrelative:src\\contracts\\ecomob.contracts\\services\\itoolprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\ecomob.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\ecomob.infra.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\settings\\mcpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\settings\\mcpsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\contracts\\ecomob.contracts\\services\\imcptransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|solutionrelative:src\\contracts\\ecomob.contracts\\services\\imcptransport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\contracts\\ecomob.contracts\\services\\iintentagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD6271F-E701-462B-BD2F-932284405543}|src\\Contracts\\EcoMob.Contracts\\EcoMob.Contracts.csproj|solutionrelative:src\\contracts\\ecomob.contracts\\services\\iintentagent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\ui\\ecomob.cli\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|solutionrelative:src\\ui\\ecomob.cli\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\ui\\ecomob.cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07661DDC-183B-4F6F-84B9-AA33AB204C12}|src\\UI\\EcoMob.Cli\\EcoMob.Cli.csproj|solutionrelative:src\\ui\\ecomob.cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\extensions\\infralayerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\extensions\\infralayerconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|c:\\users\\josst\\source\\repos\\ecomobilityassistant\\src\\infrastructure\\ecomob.infra\\aimodels\\classifiermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EC7E4D9-FBA4-48A8-948C-27BCF970BBC4}|src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj|solutionrelative:src\\infrastructure\\ecomob.infra\\aimodels\\classifiermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClassifierModel.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\AiModels\\ClassifierModel.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\AiModels\\ClassifierModel.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\AiModels\\ClassifierModel.cs",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\AiModels\\ClassifierModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T03:24:22.728Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InfraLayerConfig.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\Extensions\\InfraLayerConfig.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\Extensions\\InfraLayerConfig.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\Extensions\\InfraLayerConfig.cs",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\Extensions\\InfraLayerConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T02:57:51.107Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\Program.cs",
+              "RelativeDocumentMoniker": "src\\UI\\EcoMob.Cli\\Program.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\Program.cs",
+              "RelativeToolTip": "src\\UI\\EcoMob.Cli\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T02:48:48.701Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\App.cs",
+              "RelativeDocumentMoniker": "src\\UI\\EcoMob.Cli\\App.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\App.cs",
+              "RelativeToolTip": "src\\UI\\EcoMob.Cli\\App.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T02:45:30.61Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IIntentAgent.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IIntentAgent.cs",
+              "RelativeDocumentMoniker": "src\\Contracts\\EcoMob.Contracts\\Services\\IIntentAgent.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IIntentAgent.cs",
+              "RelativeToolTip": "src\\Contracts\\EcoMob.Contracts\\Services\\IIntentAgent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T20:43:30.839Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMcpTransport.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IMcpTransport.cs",
+              "RelativeDocumentMoniker": "src\\Contracts\\EcoMob.Contracts\\Services\\IMcpTransport.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IMcpTransport.cs",
+              "RelativeToolTip": "src\\Contracts\\EcoMob.Contracts\\Services\\IMcpTransport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T00:12:53.646Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "McpSettings.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\Settings\\McpSettings.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\Settings\\McpSettings.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\Settings\\McpSettings.cs",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\Settings\\McpSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T00:32:16.166Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StdioMcpTransportClient .cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\McpTransports\\StdioMcpTransportClient .cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\McpTransports\\StdioMcpTransportClient .cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\McpTransports\\StdioMcpTransportClient .cs",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\McpTransports\\StdioMcpTransportClient .cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T00:22:44.15Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\UI\\EcoMob.Cli\\appsettings.json",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\UI\\EcoMob.Cli\\appsettings.json",
+              "RelativeToolTip": "src\\UI\\EcoMob.Cli\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T01:09:50.701Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ToolDTO.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Dtos\\ToolDTO.cs",
+              "RelativeDocumentMoniker": "src\\Contracts\\EcoMob.Contracts\\Dtos\\ToolDTO.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Dtos\\ToolDTO.cs",
+              "RelativeToolTip": "src\\Contracts\\EcoMob.Contracts\\Dtos\\ToolDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T02:13:02.553Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "McpToolProvider.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\AiModels\\McpToolProvider.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\AiModels\\McpToolProvider.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\AiModels\\McpToolProvider.cs",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\AiModels\\McpToolProvider.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T02:16:10.153Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IToolProvider.cs",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IToolProvider.cs",
+              "RelativeDocumentMoniker": "src\\Contracts\\EcoMob.Contracts\\Services\\IToolProvider.cs",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Contracts\\EcoMob.Contracts\\Services\\IToolProvider.cs",
+              "RelativeToolTip": "src\\Contracts\\EcoMob.Contracts\\Services\\IToolProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T02:02:23.517Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EcoMob.Infra",
+              "DocumentMoniker": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj",
+              "ToolTip": "C:\\Users\\JossT\\source\\repos\\EcoMobilityAssistant\\src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj",
+              "RelativeToolTip": "src\\Infrastructure\\EcoMob.Infra\\EcoMob.Infra.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-12T10:43:15.087Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
